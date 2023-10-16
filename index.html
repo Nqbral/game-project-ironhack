@@ -38,20 +38,31 @@
         </p>
       </section>
 
-      <!-- Player and theme selector -->
-      <section id="player-theme-selector">
-        <h2>Choix du thème et du nom de joueur</h2>
+      <!-- Quizz preparation -->
+      <section id="quizz-preparation">
+        <h2>Préparation du quizz</h2>
         <div id="player-name">
           <label for="player-name">Nom du joueur</label>
           <input id="player-name-input" type="text" name="player-name" />
         </div>
-        <ul id="theme-selector">
-          <li>Anime</li>
-          <li>Films</li>
-          <li>Séries</li>
-        </ul>
-        <button id="back-player-theme-selector">Retour au menu</button>
-        <button id="start-quizz">Lancer le quizz</button>
+        <div>
+          <h3>Thème du quizz</h3>
+          <ul id="theme-selector">
+            <li>Anime</li>
+            <li>Films</li>
+            <li>Séries</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Type de questions du quizz</h3>
+          <ul id="question-types-selector">
+            <li>Image</li>
+            <li>Emoji</li>
+            <li>Blind test</li>
+          </ul>
+        </div>
+        <button id="quizz-preparation-back-to-menu">Retour au menu</button>
+        <button id="quizz-preparation-start-quizz">Lancer le quizz</button>
       </section>
 
       <!-- Quizz game -->
