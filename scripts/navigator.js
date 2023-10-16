@@ -1,4 +1,7 @@
 class Navigator {
+  /**
+   * Constructor Navigator
+   */
   constructor() {
     this.routes = [
       // Routes menu
@@ -27,7 +30,7 @@ class Navigator {
   /**
    * Display the section
    *
-   * @param {string} sectionToDisplay
+   * @param {string} sectionToDisplay id section to display
    */
   displaySection(sectionToDisplay) {
     let element = document.getElementById(sectionToDisplay);
@@ -38,7 +41,7 @@ class Navigator {
   /**
    * Hide the section
    *
-   * @param {string} sectionToHide
+   * @param {string} sectionToHide id section to hide
    */
   hideSection(sectionToHide) {
     let element = document.getElementById(sectionToHide);
@@ -63,6 +66,13 @@ class Navigator {
 }
 
 class Route {
+  /**
+   * Constructor route
+   *
+   * @param {string} idButton id button triggered
+   * @param {string} sectionToDisplay id section to display
+   * @param {string} sectionToHide id section to hide
+   */
   constructor(idButton, sectionToDisplay, sectionToHide) {
     this.idButton = idButton;
     this.sectionToDisplay = sectionToDisplay;
