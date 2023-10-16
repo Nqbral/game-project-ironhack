@@ -1,0 +1,71 @@
+class Navigator {
+  constructor() {
+    this.routes = [
+      // Routes menu
+      new Route("start-menu", "quizz-preparation", "game-menu"),
+      new Route("leaderboard-menu", "leaderboard", "game-menu"),
+      new Route("rules-menu", "rules", "game-menu"),
+      // Routes leaderboard
+      new Route("leaderboard-back-to-menu", "game-menu", "leaderboard"),
+      // Routes rules
+      new Route("rules-back-to-menu", "game-menu", "rules"),
+      // Routes quizz preparation
+      new Route(
+        "quizz-preparation-back-to-menu",
+        "game-menu",
+        "quizz-preparation"
+      ),
+      // Routes end quizz
+      new Route("quizz-end-restart", "quizz-preparation", "quizz-end"),
+      new Route("quizz-end-show-leaderboard", "leaderboard", "quizz-end"),
+      new Route("quizz-end-back-to-menu", "game-menu", "quizz-end"),
+    ];
+
+    this.initListeners();
+  }
+
+  /**
+   * Display the section
+   *
+   * @param {string} sectionToDisplay
+   */
+  displaySection(sectionToDisplay) {
+    let element = document.getElementById(sectionToDisplay);
+
+    element.style.display = "block";
+  }
+
+  /**
+   * Hide the section
+   *
+   * @param {string} sectionToHide
+   */
+  hideSection(sectionToHide) {
+    let element = document.getElementById(sectionToHide);
+
+    element.style.display = "none";
+  }
+
+  /**
+   * Add listeners to all buttons using the routes to hide/display sections
+   */
+  initListeners() {
+    for (let i = 0; i < this.routes.length; i++) {
+      let route = this.routes[i];
+      let buttonElement = document.getElementById(route.idButton);
+
+      buttonElement.addEventListener("click", () => {
+        this.hideSection(route.sectionToHide);
+        this.displaySection(route.sectionToDisplay);
+      });
+    }
+  }
+}
+
+class Route {
+  constructor(idButton, sectionToDisplay, sectionToHide) {
+    this.idButton = idButton;
+    this.sectionToDisplay = sectionToDisplay;
+    this.sectionToHide = sectionToHide;
+  }
+}
