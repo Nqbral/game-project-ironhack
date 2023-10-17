@@ -61,7 +61,7 @@ class Game {
 
     this.questions = this.shuffleQuestions(
       this.filterQuestions(jsonQuestions)
-    ).slice(0, 10);
+    ).slice(0, 5);
   }
 
   /**
@@ -82,6 +82,12 @@ class Game {
           case "image":
             return new QuestionImage(
               question.src,
+              this.settings.themeQuestions,
+              question.answers
+            );
+          case "emojis":
+            return new QuestionEmoji(
+              question.emojis,
               this.settings.themeQuestions,
               question.answers
             );
