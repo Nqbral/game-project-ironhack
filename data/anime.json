@@ -48,5 +48,55 @@
     "type": "image",
     "src": "kuroko.png",
     "answers": ["kuroko no basket"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "⚔️ ⚜️ ⛩ 🔰",
+    "answers": ["attaque des titans", "attack on titans", "shingeki no kyojin"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "☘",
+    "answers": ["black clover"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🦊 🍜 🍥",
+    "answers": ["naruto"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "▬▬ι═══════ﺤ",
+    "answers": ["berserk"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "👺 🌊 🔥 🐗",
+    "answers": ["demon slayer"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🐉 🔮",
+    "answers": ["dragon ball"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🔵 ⚽ 🧩",
+    "answers": ["blue lock"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "👾 🗡 🏫",
+    "answers": ["assassination classroom"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "📓 ✍ 🍎",
+    "answers": ["death note"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🥼 🪨 🧪",
+    "answers": ["docteur stone", "dr stone"]
   }
 ]
