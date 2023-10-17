@@ -1,0 +1,52 @@
+[
+  {
+    "type": "image",
+    "src": "aot.png",
+    "answers": ["attaque des titans", "attack on titans", "shingeki no kyojin"]
+  },
+  {
+    "type": "image",
+    "src": "mha.png",
+    "answers": ["my hero academia"]
+  },
+  {
+    "type": "image",
+    "src": "black_clover.png",
+    "answers": ["black clover"]
+  },
+  {
+    "type": "image",
+    "src": "bleach.png",
+    "answers": ["bleach"]
+  },
+  {
+    "type": "image",
+    "src": "jujutsu_kaisen.png",
+    "answers": ["jujutsu kaisen"]
+  },
+  {
+    "type": "image",
+    "src": "naruto.png",
+    "answers": ["naruto"]
+  },
+  {
+    "type": "image",
+    "src": "pokemon.png",
+    "answers": ["pokemon"]
+  },
+  {
+    "type": "image",
+    "src": "one_piece.png",
+    "answers": ["one piece"]
+  },
+  {
+    "type": "image",
+    "src": "demon_slayer.png",
+    "answers": ["demon slayer"]
+  },
+  {
+    "type": "image",
+    "src": "kuroko.png",
+    "answers": ["kuroko no basket"]
+  }
+]
