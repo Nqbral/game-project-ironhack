@@ -10,20 +10,20 @@ class QuestionImage extends Question {
     super(themeQuestion, answers);
 
     this.imgSrc = imageSrc;
+    this.imageQuestionContent = document.getElementById(
+      "image-question-content"
+    );
   }
 
   /**
-   * Init the html code to display the question content
-   *
-   * @returns Element
+   * Display the image section
    */
-  initHtmlQuestionContent() {
-    let element = document.createElement("img");
-
-    element.src =
-      "../../assets/images/" + this.themeQuestion + "/" + this.imgSrc;
-
-    return element;
+  displayQuestion() {
+    this.emojisQuestionSection.style.display = "none";
+    this.musicQuestionSection.style.display = "none";
+    this.imageQuestionContent.src = `../../assets/images/${this.themeQuestion}/${this.imgSrc}`;
+    this.updateQuestion();
+    this.imageQuestionSection.style.display = "block";
   }
 
   /**

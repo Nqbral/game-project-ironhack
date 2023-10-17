@@ -8,6 +8,14 @@ class Question {
   constructor(themeQuestion, answers) {
     this.themeQuestion = themeQuestion;
     this.answers = answers;
+    this.imageQuestionSection = document.getElementById("image-question");
+    this.emojisQuestionSection = document.getElementById("emojis-question");
+    this.musicQuestionSection = document.getElementById("music-question");
+    this.question = document.getElementById("question");
+  }
+
+  updateQuestion() {
+    this.question.innerHTML = this.getQuestion();
   }
 
   /**
@@ -36,17 +44,5 @@ class Question {
    */
   removeAccent(str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  }
-
-  /**
-   * Render the question in HTML
-   */
-  renderQuestion() {
-    let elementContentQuestion = document.getElementById("content-question");
-    let elementQuestion = document.getElementById("question");
-    elementContentQuestion.innerHTML = "";
-    elementQuestion.innerHTML = this.getQuestion();
-
-    elementContentQuestion.appendChild(this.initHtmlQuestionContent());
   }
 }

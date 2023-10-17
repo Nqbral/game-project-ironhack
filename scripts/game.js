@@ -1,11 +1,13 @@
 class Game {
   /**
    * Constructor Game
-   * @param {Leaderboard} leaderboard leaderboard
    *
+   * @param {Leaderboard} leaderboard leaderboard
+   * @param {MusicPlayer} musicPlayer music player
    */
-  constructor(leaderboard) {
+  constructor(leaderboard, musicPlayer) {
     this.leaderboard = leaderboard;
+    this.musicPlayer = musicPlayer;
     this.questions = [];
     this.answers = [];
     this.indexQuestion = 0;
@@ -27,7 +29,7 @@ class Game {
 
     await this.initQuestions().then(() => {
       this.questionInProgress = this.questions[this.indexQuestion];
-      this.questionInProgress.renderQuestion();
+      this.questionInProgress.displayQuestion();
       this.showGame();
     });
   }
@@ -91,7 +93,15 @@ class Game {
               this.settings.themeQuestions,
               question.answers
             );
+          case "music":
+            return new QuestionMusic(
+              question.src,
+              this.settings.themeQuestions,
+              question.answers,
+              this.musicPlayer
+            );
           default:
+            console.log(`Question type ${question.type} not handled.`);
             return null;
         }
       });
@@ -147,6 +157,11 @@ class Game {
    * Display the next question or end the game if it's over
    */
   nextQuestion() {
+    if (this.musicPlayer.isPlaying) {
+      this.musicPlayer.pauseTrack();
+      this.musicPlayer.resetValues();
+    }
+
     this.indexQuestion++;
     this.answerInput.value = "";
 
@@ -156,7 +171,7 @@ class Game {
     }
 
     this.questionInProgress = this.questions[this.indexQuestion];
-    this.questionInProgress.renderQuestion();
+    this.questionInProgress.displayQuestion();
   }
 
   /**

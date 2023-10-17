@@ -2,7 +2,7 @@ class QuestionEmoji extends Question {
   /**
    * Constructor QuestionEmoji
    *
-   * @param {string} imageSrc image source
+   * @param {string} emojis emojis
    * @param {string} themeQuestion theme of the question
    * @param {array[string]} answers list of possible answers
    */
@@ -10,19 +10,20 @@ class QuestionEmoji extends Question {
     super(themeQuestion, answers);
 
     this.emojis = emojis;
+    this.emojisQuestionContent = document.getElementById(
+      "emojis-question-content"
+    );
   }
 
   /**
-   * Init the html code to display the question content
-   *
-   * @returns Element
+   * Display the image section
    */
-  initHtmlQuestionContent() {
-    let element = document.createElement("p");
-
-    element.innerHTML = this.emojis;
-
-    return element;
+  displayQuestion() {
+    this.imageQuestionSection.style.display = "none";
+    this.musicQuestionSection.style.display = "none";
+    this.emojisQuestionContent.innerHTML = this.emojis;
+    this.updateQuestion();
+    this.emojisQuestionSection.style.display = "block";
   }
 
   /**
