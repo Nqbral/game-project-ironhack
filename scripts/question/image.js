@@ -8,6 +8,8 @@ class QuestionImage extends Question {
    */
   constructor(imageSrc, themeQuestion, answers) {
     super(themeQuestion, answers);
+
+    this.imgSrc = imageSrc;
   }
 
   /**
@@ -18,7 +20,8 @@ class QuestionImage extends Question {
   initHtmlQuestionContent() {
     let element = document.createElement("img");
 
-    element.src = this.imgSrc;
+    element.src =
+      "../../assets/images/" + this.themeQuestion + "/" + this.imgSrc;
 
     return element;
   }
