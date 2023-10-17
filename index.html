@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Popcorn quizz game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <link href="./assets/styles/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -66,7 +70,49 @@
       <!-- Quizz game -->
       <section id="quizz-game">
         <h2>Quizz sur les anime</h2>
-        <div id="content-question"></div>
+        <div id="content-question">
+          <!-- Image Section -->
+          <div id="image-question">
+            <img id="image-question-content" />
+          </div>
+          <!-- Emojis Section -->
+          <div id="emojis-question">
+            <p id="emojis-question-content"></p>
+          </div>
+          <!-- Music Section -->
+          <div id="music-question">
+            <div id="player-music">
+              <audio id="audio-track"></audio>
+              <div id="playpause-track" onclick="musicPlayer.playpauseTrack()">
+                <i class="fa fa-play-circle"></i>
+              </div>
+              <div class="slider-container">
+                <div id="current-time">00:00</div>
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  id="seek-slider"
+                  onchange="musicPlayer.seekTo()"
+                  value="0"
+                />
+                <div id="total-duration">00:00</div>
+              </div>
+              <div class="slider-container">
+                <i class="fa fa-volume-down"></i>
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  id="volume-slider"
+                  onchange="musicPlayer.setVolume()"
+                  value="50"
+                />
+                <i class="fa fa-volume-up"></i>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="question"></div>
         <label for="answer">Ma réponse</label>
         <input type="text" id="answer" name="answer" />
@@ -91,12 +137,14 @@
       </section>
 
       <!-- Scripts -->
+      <script type="text/javascript" src="scripts/music-player.js"></script>
       <script type="text/javascript" src="scripts/player.js"></script>
       <script type="text/javascript" src="scripts/score.js"></script>
       <script type="text/javascript" src="scripts/leaderboard.js"></script>
       <script type="text/javascript" src="scripts/question.js"></script>
       <script type="text/javascript" src="scripts/question/image.js"></script>
       <script type="text/javascript" src="scripts/question/emoji.js"></script>
+      <script type="text/javascript" src="scripts/question/music.js"></script>
       <script type="text/javascript" src="scripts/settings.js"></script>
       <script type="text/javascript" src="scripts/game.js"></script>
       <script type="text/javascript" src="scripts/navigator.js"></script>

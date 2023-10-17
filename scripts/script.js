@@ -1,7 +1,9 @@
+const musicPlayer = new MusicPlayer();
+
 window.onload = function () {
   const navigator = new Navigator();
   const leaderboard = new Leaderboard();
-  let game = new Game(leaderboard);
+  let game = new Game(leaderboard, musicPlayer);
 
   const startQuizzButton = document.getElementById(
     "quizz-preparation-start-quizz"

@@ -98,5 +98,15 @@
     "type": "emojis",
     "emojis": "🥼 🪨 🧪",
     "answers": ["docteur stone", "dr stone"]
+  },
+  {
+    "type": "music",
+    "src": "bleach_op_1.mp3",
+    "answers": ["bleach"]
+  },
+  {
+    "type": "music",
+    "src": "parasyte_op_1.mp3",
+    "answers": ["parasyte"]
   }
 ]
