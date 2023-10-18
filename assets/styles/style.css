@@ -14,6 +14,7 @@ body {
   background-color: #3d3c40;
   min-width: 100vw;
   min-height: 100vh;
+  color: #ffffff;
 }
 
 main {
@@ -47,6 +48,12 @@ section {
   background-color: #515151;
   border-radius: 2px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+  padding: 20px 10px;
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Anchors */
@@ -90,7 +97,6 @@ h2 {
   margin: 0.5rem auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  min-width: 40vw;
 }
 
 .primary-button {
@@ -102,9 +108,22 @@ h2 {
   transition: background-color 0.3s;
 }
 
+.outlined-button {
+  border-radius: 2px;
+  border: 1px solid #aaaaaa;
+  color: #f44336;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
 .primary-button:hover,
 .primary-button:focus {
   background-color: #d32f2f;
+}
+
+.outlined-button:hover,
+.outlined-button:focus {
+  background-color: rgba(255, 131, 131, 0.401);
 }
 
 /* NAVBAR */
@@ -140,11 +159,25 @@ nav > a {
   align-items: center;
 }
 
-#game-menu .card {
-  margin-top: 20px;
-  padding: 20px 10px;
-  min-width: 70vw;
+#game-menu .button {
+  min-width: 60vw;
+}
+
+/* QUIZZ PREPARATION */
+#quizz-preparation > div > div:not(#buttons-list-quizz-prep) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#buttons-list-quizz-prep {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#buttons-list-quizz-prep > button {
+  min-width: 35vw;
 }

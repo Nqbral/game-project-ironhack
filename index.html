@@ -73,29 +73,43 @@
 
       <!-- Quizz preparation -->
       <section id="quizz-preparation">
-        <h2>Préparation du quizz</h2>
-        <div id="player-name">
-          <label for="player-name">Nom du joueur</label>
-          <input id="player-name-input" type="text" name="player-name" />
+        <div class="card">
+          <h2>Préparation du quizz</h2>
+          <div id="player-name">
+            <h3>Nom du joueur</h3>
+            <input id="player-name-input" type="text" name="player-name" />
+          </div>
+          <div class="list-prepation">
+            <h3>Thème du quizz</h3>
+            <ul id="theme-selector">
+              <li>Anime</li>
+              <li>Films</li>
+              <li>Séries</li>
+            </ul>
+          </div>
+          <div class="list-prepation">
+            <h3>Type de questions du quizz</h3>
+            <ul id="question-types-selector">
+              <li>Image</li>
+              <li>Emoji</li>
+              <li>Blind test</li>
+            </ul>
+          </div>
+          <div id="buttons-list-quizz-prep">
+            <button
+              class="button outlined-button"
+              id="quizz-preparation-back-to-menu"
+            >
+              RETOUR AU MENU
+            </button>
+            <button
+              class="button primary-button"
+              id="quizz-preparation-start-quizz"
+            >
+              LANCER LE QUIZZ
+            </button>
+          </div>
         </div>
-        <div>
-          <h3>Thème du quizz</h3>
-          <ul id="theme-selector">
-            <li>Anime</li>
-            <li>Films</li>
-            <li>Séries</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Type de questions du quizz</h3>
-          <ul id="question-types-selector">
-            <li>Image</li>
-            <li>Emoji</li>
-            <li>Blind test</li>
-          </ul>
-        </div>
-        <button id="quizz-preparation-back-to-menu">Retour au menu</button>
-        <button id="quizz-preparation-start-quizz">Lancer le quizz</button>
       </section>
 
       <!-- Quizz game -->
