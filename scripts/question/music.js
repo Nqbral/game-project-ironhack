@@ -21,7 +21,7 @@ class QuestionMusic extends Question {
       `../../assets/sounds/${this.themeQuestion}/${this.musicSrc}`
     );
     this.updateQuestion();
-    this.musicQuestionSection.style.display = "block";
+    this.musicQuestionSection.style.display = "flex";
   }
 
   /**

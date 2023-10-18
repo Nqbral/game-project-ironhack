@@ -48,18 +48,18 @@ class MusicPlayer {
     this.currentTrack.play();
     this.isPlaying = true;
 
-    this.playPauseBtn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+    this.playPauseBtn.innerHTML = '<i class="fa fa-pause-circle"></i>';
   }
 
   pauseTrack() {
     this.currentTrack.pause();
     this.isPlaying = false;
-    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
   }
 
   endTrack() {
     this.isPlaying = false;
-    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
   }
 
   seekTo() {

@@ -35,7 +35,7 @@ class Navigator {
   displaySection(sectionToDisplay) {
     let element = document.getElementById(sectionToDisplay);
 
-    element.style.display = "block";
+    element.style.display = "flex";
   }
 
   /**

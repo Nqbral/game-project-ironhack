@@ -23,7 +23,7 @@ class QuestionEmoji extends Question {
     this.musicQuestionSection.style.display = "none";
     this.emojisQuestionContent.innerHTML = this.emojis;
     this.updateQuestion();
-    this.emojisQuestionSection.style.display = "block";
+    this.emojisQuestionSection.style.display = "flex";
   }
 
   /**

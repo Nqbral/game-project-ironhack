@@ -130,7 +130,7 @@ class Game {
    */
   showGame() {
     this.sectionQuizzPrep.style.display = "none";
-    this.sectionQuizzGame.style.display = "block";
+    this.sectionQuizzGame.style.display = "flex";
   }
 
   /**
@@ -183,7 +183,7 @@ class Game {
     this.renderEndQuizzSection();
 
     this.sectionQuizzGame.style.display = "none";
-    this.sectionQuizzEnd.style.display = "block";
+    this.sectionQuizzEnd.style.display = "flex";
   }
 
   /**
