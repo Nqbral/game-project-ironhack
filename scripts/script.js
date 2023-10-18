@@ -8,6 +8,7 @@ window.onload = function () {
   const startQuizzButton = document.getElementById(
     "quizz-preparation-start-quizz"
   );
+  const inputAnswer = document.getElementById("answer");
   const buttonQuizzPass = document.getElementById("button-quizz-pass");
   const buttonQuizzValidate = document.getElementById("button-quizz-validate");
 
@@ -21,5 +22,12 @@ window.onload = function () {
 
   buttonQuizzValidate.addEventListener("click", () => {
     game.validateQuestion();
+  });
+
+  inputAnswer.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      buttonQuizzValidate.click();
+    }
   });
 };

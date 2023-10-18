@@ -1,3 +1,29 @@
+html {
+  box-sizing: border-box;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  font-family: "Proxima Nova Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3d3c40;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #leaderboard,
 #rules,
 #quizz-preparation,
@@ -7,4 +33,118 @@
 #image-question,
 #emojis-question {
   display: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #515151;
+  border-radius: 2px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+/* Anchors */
+a {
+  text-decoration: none;
+}
+
+/* Colors (generated from https://www.materialpalette.com/):
+ * Dark Primary Red : #D32F2F
+ * Light Primary Red : #FFCDD2
+ * Primary Red : #F44336
+ * Text : #FFFFFF
+ * Accent : #FFC107
+ * Primary Text : #212121
+ * Secondary Text : #757575
+ * Divider Color : #BDBDBD
+ */
+
+/* Colors */
+.accent-color {
+  color: #ffc107;
+}
+
+.primary-color {
+  color: #f44336;
+}
+
+/* Headings */
+h1 {
+  color: #f44336;
+  font-size: 2.2rem;
+}
+
+h2 {
+  margin: 10px auto;
+  color: #ffc107;
+}
+
+/* Buttons */
+.button {
+  margin: 0.5rem auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 40vw;
+}
+
+.primary-button {
+  background-color: #f44336;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-width: 0;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: #d32f2f;
+}
+
+/* NAVBAR */
+#logo-nav {
+  height: 3vh;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+nav > a {
+  margin: auto 10px;
+}
+
+/* MENU */
+#logo-menu {
+  height: 100px;
+}
+
+#game-menu #header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-menu .card {
+  margin-top: 20px;
+  padding: 20px 10px;
+  min-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

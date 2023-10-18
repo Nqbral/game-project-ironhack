@@ -5,20 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Popcorn quizz game</title>
+    <link rel="icon" href="./assets/images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
     <link href="./assets/styles/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Header / navbar -->
+    <header>
+      <nav id="navbar">
+        <a href="./index.html"
+          ><img src="./assets/images/logo.png" alt="spotify-logo" id="logo-nav"
+        /></a>
+        <a href="./index.html"
+          ><span class="accent-color">Popcorn</span
+          ><span class="primary-color"> quizz</span></a
+        >
+      </nav>
+    </header>
+
     <main>
       <!-- Menu -->
       <section id="game-menu">
-        <h1>Popcorn quizz game</h1>
-        <button id="start-menu">Démarrer</button>
-        <button id="leaderboard-menu">Classement</button>
-        <button id="rules-menu">Règles</button>
+        <div id="header-menu">
+          <img id="logo-menu" src="./assets/images/logo.png" alt="logo-menu" />
+          <h1><span class="accent-color">Popcorn</span> quizz</h1>
+        </div>
+        <div class="card">
+          <h2>Menu</h2>
+          <button class="button primary-button" id="start-menu">
+            DÉMARRER
+          </button>
+          <button class="button primary-button" id="leaderboard-menu">
+            CLASSEMENT
+          </button>
+          <button class="button primary-button" id="rules-menu">RÈGLES</button>
+          <button class="button primary-button" id="about-menu">
+            À PROPOS
+          </button>
+        </div>
       </section>
 
       <!-- Leaderboard -->
