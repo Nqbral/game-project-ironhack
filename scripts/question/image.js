@@ -23,7 +23,7 @@ class QuestionImage extends Question {
     this.musicQuestionSection.style.display = "none";
     this.imageQuestionContent.src = `../../assets/images/${this.themeQuestion}/${this.imgSrc}`;
     this.updateQuestion();
-    this.imageQuestionSection.style.display = "block";
+    this.imageQuestionSection.style.display = "flex";
   }
 
   /**

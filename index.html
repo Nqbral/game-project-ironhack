@@ -114,56 +114,79 @@
 
       <!-- Quizz game -->
       <section id="quizz-game">
-        <h2>Quizz sur les anime</h2>
-        <div id="content-question">
-          <!-- Image Section -->
-          <div id="image-question">
-            <img id="image-question-content" />
-          </div>
-          <!-- Emojis Section -->
-          <div id="emojis-question">
-            <p id="emojis-question-content"></p>
-          </div>
-          <!-- Music Section -->
-          <div id="music-question">
-            <div id="player-music">
-              <audio id="audio-track"></audio>
-              <div id="playpause-track" onclick="musicPlayer.playpauseTrack()">
-                <i class="fa fa-play-circle"></i>
-              </div>
-              <div class="slider-container">
-                <div id="current-time">00:00</div>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  id="seek-slider"
-                  onchange="musicPlayer.seekTo()"
-                  value="0"
+        <!-- Content -->
+        <div class="card">
+          <h2>Quizz sur les anime</h2>
+          <div id="content-question">
+            <!-- Image Section -->
+            <div id="image-question">
+              <img id="image-question-content" />
+            </div>
+
+            <!-- Emojis Section -->
+            <div id="emojis-question">
+              <p id="emojis-question-content"></p>
+            </div>
+
+            <!-- Music Section -->
+            <div id="music-question">
+              <div id="player-music">
+                <img
+                  src="./assets/images/white_soundwave.png"
+                  alt="white_soundwave"
                 />
-                <div id="total-duration">00:00</div>
-              </div>
-              <div class="slider-container">
-                <i class="fa fa-volume-down"></i>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  id="volume-slider"
-                  onchange="musicPlayer.setVolume()"
-                  value="50"
-                />
-                <i class="fa fa-volume-up"></i>
+                <audio id="audio-track"></audio>
+                <div
+                  id="playpause-track"
+                  onclick="musicPlayer.playpauseTrack()"
+                >
+                  <i class="fa fa-play-circle"></i>
+                </div>
+                <div class="slider-container">
+                  <div id="current-time">00:00</div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    id="seek-slider"
+                    onchange="musicPlayer.seekTo()"
+                    value="0"
+                  />
+                  <div id="total-duration">00:00</div>
+                </div>
+                <div class="slider-container">
+                  <i class="fa fa-volume-down"></i>
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    id="volume-slider"
+                    onchange="musicPlayer.setVolume()"
+                    value="50"
+                  />
+                  <i class="fa fa-volume-up"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="question"></div>
-        <label for="answer">Ma réponse</label>
-        <input type="text" id="answer" name="answer" />
-        <div id="buttons-quizz">
-          <button id="button-quizz-pass">Passer la question</button>
-          <button id="button-quizz-validate">Valider la réponse</button>
+
+        <div id="question-card" class="card">
+          <div id="question"></div>
+          <input
+            type="text"
+            id="answer"
+            name="answer"
+            placeholder="Ma réponse"
+          />
+          <div id="buttons-quizz">
+            <button class="button outlined-button" id="button-quizz-pass">
+              PASSER LA QUESTION
+            </button>
+            <button class="button primary-button" id="button-quizz-validate">
+              VALIDER LA RÉPONSE
+            </button>
+          </div>
         </div>
       </section>
 
