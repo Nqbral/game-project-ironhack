@@ -92,6 +92,10 @@ h2 {
   color: #ffc107;
 }
 
+h3 {
+  margin: 10px auto;
+}
+
 /* Buttons */
 .button {
   margin: 0.5rem auto;
@@ -222,8 +226,54 @@ nav > a {
   justify-content: space-between;
 }
 
+.list-selector {
+  min-width: 50vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.list-selector > li {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #3d3c40;
+  transition: background-color 0.3s linear;
+}
+
+.list-selector > li:hover {
+  cursor: pointer;
+}
+
+.list-selector > li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.list-selector > li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.list-selector > li.selected {
+  background-color: #c69501;
+}
+
+.list-selector > li:hover {
+  background-color: #49484d;
+}
+
+.list-selector > li.selected:hover {
+  background-color: #ffc107;
+}
+
 #buttons-list-quizz-prep > button {
   min-width: 35vw;
+}
+
+#player-name {
+  padding-bottom: 15px;
 }
 
 /* QUIZZ GAME */

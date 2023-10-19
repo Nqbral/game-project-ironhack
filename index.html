@@ -75,25 +75,25 @@
       <section id="quizz-preparation">
         <div class="card">
           <h2>Préparation du quizz</h2>
-          <div id="player-name">
-            <h3>Nom du joueur</h3>
-            <input id="player-name-input" type="text" name="player-name" />
-          </div>
           <div class="list-prepation">
             <h3>Thème du quizz</h3>
-            <ul id="theme-selector">
-              <li>Anime</li>
-              <li>Films</li>
-              <li>Séries</li>
+            <ul class="list-selector" id="theme-selector">
+              <li id="theme-anime" value="anime">Anime</li>
+              <li id="theme-movies" value="movies">Films</li>
+              <li id="theme-series" value="series">Séries</li>
             </ul>
           </div>
           <div class="list-prepation">
             <h3>Type de questions du quizz</h3>
-            <ul id="question-types-selector">
-              <li>Image</li>
-              <li>Emoji</li>
-              <li>Blind test</li>
+            <ul class="list-selector" id="question-types-selector">
+              <li id="question-type-image" value="image">Image</li>
+              <li id="question-type-emojis" value="emojis">Emojis</li>
+              <li id="question-type-music" value="music">Musique</li>
             </ul>
+          </div>
+          <div id="player-name">
+            <h3>Nom du joueur</h3>
+            <input id="player-name-input" type="text" name="player-name" />
           </div>
           <div id="buttons-list-quizz-prep">
             <button

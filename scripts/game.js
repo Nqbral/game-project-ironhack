@@ -4,10 +4,12 @@ class Game {
    *
    * @param {Leaderboard} leaderboard leaderboard
    * @param {MusicPlayer} musicPlayer music player
+   * @param {Settings} settings settings
    */
-  constructor(leaderboard, musicPlayer) {
+  constructor(leaderboard, musicPlayer, settings) {
     this.leaderboard = leaderboard;
     this.musicPlayer = musicPlayer;
+    this.settings = settings;
     this.questions = [];
     this.answers = [];
     this.indexQuestion = 0;
@@ -16,13 +18,57 @@ class Game {
     this.sectionQuizzPrep = document.getElementById("quizz-preparation");
     this.sectionQuizzGame = document.getElementById("quizz-game");
     this.sectionQuizzEnd = document.getElementById("quizz-end");
+    this.startQuizzButton = document.getElementById(
+      "quizz-preparation-start-quizz"
+    );
+    this.playerNameInput = document.getElementById("player-name-input");
     this.answerInput = document.getElementById("answer");
+    this.buttonQuizzPass = document.getElementById("button-quizz-pass");
+    this.buttonQuizzValidate = document.getElementById("button-quizz-validate");
+
+    this.initListeners();
+  }
+
+  /**
+   * Init the listeners
+   */
+  initListeners() {
+    this.startQuizzButton.addEventListener("click", () => {
+      this.startGame();
+    });
+
+    this.buttonQuizzPass.addEventListener("click", () => {
+      this.passQuestion();
+    });
+
+    this.buttonQuizzValidate.addEventListener("click", () => {
+      this.validateQuestion();
+    });
+
+    this.playerNameInput.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        this.startGame();
+      }
+    });
+
+    this.answerInput.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        this.validateQuestion();
+      }
+    });
   }
 
   /**
    * Start the game
    */
   async startGame() {
+    if (this.checkValiditySettings().length > 0) {
+      return;
+    }
+
+    this.player = new Player(this.playerNameInput.value);
+    this.score = new Score(this.player);
     this.indexQuestion = 0;
     this.questions = [];
     this.answers = [];
@@ -35,13 +81,24 @@ class Game {
   }
 
   /**
-   * Set settings got from quizz preparation section
+   * Check the validity of errors
    */
-  setSettings() {
-    //TODO : utiliser la section preparation
-    this.player = new Player();
-    this.settings = new Settings();
-    this.score = new Score(this.player);
+  checkValiditySettings() {
+    let listErrors = [];
+
+    if (this.settings.themeQuestions === "") {
+      listErrors.push("Veuillez sélectionner un thème.");
+    }
+
+    if (this.settings.typeQuestions.length === 0) {
+      listErrors.push("Veuillez sélectionner au moins un type de questions.");
+    }
+
+    if (this.playerNameInput.value.length === 0) {
+      listErrors.push("Veuillez saisir un nom de joueur.");
+    }
+
+    return listErrors;
   }
 
   /**
@@ -178,6 +235,8 @@ class Game {
    * End the game : show the end section, add score and update leaderboard
    */
   endGame() {
+    this.settings.resetSettings();
+    this.playerNameInput.value = "";
     this.leaderboard.addScore(this.score);
     this.leaderboard.renderLeaderboard();
     this.renderEndQuizzSection();
