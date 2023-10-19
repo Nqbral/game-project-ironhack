@@ -2,7 +2,7 @@ class Player {
   /**
    * Constructor Player
    */
-  constructor() {
-    this.name = "testPlayer";
+  constructor(name) {
+    this.name = name;
   }
 }
