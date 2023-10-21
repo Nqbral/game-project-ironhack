@@ -21,9 +21,13 @@ class QuestionImage extends Question {
   displayQuestion() {
     this.emojisQuestionSection.style.display = "none";
     this.musicQuestionSection.style.display = "none";
-    this.imageQuestionContent.src = `../../assets/images/${this.themeQuestion}/${this.imgSrc}`;
+    this.imageQuestionContent.src = this.getImageSrc();
     this.updateQuestion();
     this.imageQuestionSection.style.display = "flex";
+  }
+
+  getImageSrc() {
+    return `../../assets/images/${this.themeQuestion}/${this.imgSrc}`;
   }
 
   /**

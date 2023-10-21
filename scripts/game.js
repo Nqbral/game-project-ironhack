@@ -61,6 +61,26 @@ class Game {
         this.validateQuestion();
       }
     });
+
+    let endingButtons = [
+      "quizz-end-restart",
+      "quizz-end-show-leaderboard",
+      "quizz-end-back-to-menu",
+    ];
+
+    for (let i = 0; i < endingButtons.length; i++) {
+      document
+        .getElementById(endingButtons[i])
+        .addEventListener("click", () => {
+          let audioTracks =
+            document.getElementsByClassName("audio-track-answer");
+
+          for (let i = 0; i < audioTracks.length; i++) {
+            let audioTrack = audioTracks[i];
+            audioTrack.pause();
+          }
+        });
+    }
   }
 
   /**
@@ -199,15 +219,55 @@ class Game {
     this.sectionQuizzGame.style.display = "flex";
   }
 
+  generateAnswer(isAnswerOK, isAnswerGiven) {
+    let valueAnswer = this.answerInput.value;
+
+    switch (this.questionInProgress.constructor.name) {
+      case "QuestionEmoji":
+        return new AnswerEmoji(
+          valueAnswer,
+          this.questionInProgress,
+          isAnswerOK,
+          isAnswerGiven,
+          this.indexQuestion + 1
+        );
+      case "QuestionImage":
+        return new AnswerImage(
+          valueAnswer,
+          this.questionInProgress,
+          isAnswerOK,
+          isAnswerGiven,
+          this.indexQuestion + 1
+        );
+      case "QuestionMusic":
+        return new AnswerMusic(
+          valueAnswer,
+          this.questionInProgress,
+          isAnswerOK,
+          isAnswerGiven,
+          this.indexQuestion + 1
+        );
+      default:
+        return null;
+    }
+  }
+
   /**
    * Validate the question and update the score if ok and display then next question
    */
   validateQuestion() {
+    let responseIsOk = false;
+
     if (this.questionInProgress.checkResponse(this.answerInput.value)) {
+      responseIsOk = true;
       this.score.score++;
     }
 
-    this.answers.push(this.answerInput.value);
+    let answer = this.generateAnswer(
+      responseIsOk,
+      this.answerInput.value.length > 0
+    );
+    this.answers.push(answer);
     this.nextQuestion();
   }
 
@@ -215,7 +275,8 @@ class Game {
    * Pass the question and display the next section
    */
   passQuestion() {
-    this.answers.push("");
+    let answer = this.generateAnswer(false, false);
+    this.answers.push(answer);
     this.nextQuestion();
   }
 
@@ -260,8 +321,28 @@ class Game {
   renderEndQuizzSection() {
     let paragraphScore = document.getElementById("paragraph-score");
 
-    paragraphScore.innerHTML = `${this.score.score} réponses validées pour ${this.questions.length} questions !`;
+    paragraphScore.innerHTML = `${this.score.score}/${this.questions.length}`;
 
-    //TODO display answers avec erreur ou validé etc...
+    let listAnswers = document.getElementById("list-answers");
+    listAnswers.innerHTML = "";
+
+    for (let i = 0; i < this.answers.length; i++) {
+      let answer = this.answers[i];
+
+      listAnswers.appendChild(answer.generateHtmlAnswer());
+
+      // Specitif for music questions
+      if (typeof answer.initGetterElements === "function") {
+        answer.initGetterElements();
+      }
+
+      if (typeof answer.initListeners === "function") {
+        answer.initListeners();
+      }
+
+      if (typeof answer.loadTrack === "function") {
+        answer.loadTrack();
+      }
+    }
   }
 }
