@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #3d3c40;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   min-height: 100vh;
   color: #ffffff;
 }
@@ -333,4 +333,61 @@ nav > a {
   align-items: center;
   gap: 0.2rem;
   justify-content: space-between;
+}
+
+/* Modal error */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  border: none;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #3d3c40;
+  margin: 50% auto;
+  padding: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  width: 80vw;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title-modal {
+  font-size: 1.2rem;
+}
+
+#close-modal {
+  color: #aaa;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#close-modal:hover,
+#close-modal:focus {
+  color: #fff;
+  cursor: pointer;
+}
+
+#modal-message-errors {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#list-errors-modal {
+  padding-bottom: 15px;
 }
