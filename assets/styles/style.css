@@ -17,6 +17,11 @@ body {
   color: #ffffff;
 }
 
+ul,
+ol {
+  padding: 0;
+}
+
 main {
   min-height: 100vh;
   min-width: 100vw;
@@ -105,6 +110,7 @@ h3 {
   margin: 0.5rem auto;
   padding-top: 5px;
   padding-bottom: 5px;
+  min-width: 25vw;
 }
 
 .primary-button,
@@ -229,6 +235,35 @@ nav > a {
   min-width: 60vw;
 }
 
+/* LEADERBOARD */
+#leaderboard-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leaderboard-scores > ol {
+  list-style: none;
+  counter-reset: li;
+  margin-left: 1em;
+}
+
+#leaderboard-scores > ol > li {
+  padding-bottom: 5px;
+  counter-increment: li;
+}
+
+#leaderboard-scores > ol > li::before {
+  content: counter(li) ".";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#leaderboard-scores > ol > li:first-child::before {
+  color: #ffc107;
+}
+
 /* QUIZZ PREPARATION */
 #quizz-preparation > div > div:not(#buttons-list-quizz-prep) {
   display: flex;
@@ -294,7 +329,7 @@ nav > a {
   padding-bottom: 15px;
 }
 
-/* Modal error */
+/* MODAL ERROR */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -459,6 +494,10 @@ nav > a {
 }
 #list-answers > li:nth-child(even) {
   background-color: #59585c;
+}
+
+.answer-content {
+  min-width: 70vw;
 }
 
 .good-answer {

@@ -13,6 +13,7 @@ class Answer {
     elementList.appendChild(this.generateTypeAnswer());
 
     let elementAnswerContent = document.createElement("div");
+    elementAnswerContent.classList.add("answer-content");
 
     elementAnswerContent.appendChild(this.generateQuestion());
     elementAnswerContent.appendChild(this.generateAnswerGiven());
