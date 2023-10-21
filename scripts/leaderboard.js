@@ -34,6 +34,17 @@ class Leaderboard {
 
     element = document.createElement("ol");
 
+    let scoresSorted = this.scores.sort((scoreA, scoreB) => {
+      if (scoreA.score < scoreB.score) {
+        return 1;
+      }
+      if (scoreA.score > scoreB.score) {
+        return -1;
+      }
+
+      return 0;
+    });
+
     for (let i = 0; i < this.scores.length; i++) {
       let score = this.scores[i];
 

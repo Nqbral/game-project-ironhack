@@ -1,7 +1,7 @@
 class Score {
-  constructor(player, score) {
+  constructor(player) {
     this.player = player;
-    this.score = score;
+    this.score = 0;
   }
 
   /**

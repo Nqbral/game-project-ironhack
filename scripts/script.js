@@ -1,4 +1,8 @@
+let musicPlayer = new MusicPlayer();
+
 window.onload = function () {
-  const navigator = new Navigator();
-  const leaderboard = new Leaderboard();
+  let navigator = new Navigator();
+  let leaderboard = new Leaderboard();
+  let settings = new Settings();
+  let game = new Game(leaderboard, musicPlayer, settings);
 };
