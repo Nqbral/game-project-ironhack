@@ -8,10 +8,13 @@ class Navigator {
       new Route("start-menu", "quizz-preparation", "game-menu"),
       new Route("leaderboard-menu", "leaderboard", "game-menu"),
       new Route("rules-menu", "rules", "game-menu"),
+      new Route("about-menu", "about", "game-menu"),
       // Routes leaderboard
       new Route("leaderboard-back-to-menu", "game-menu", "leaderboard"),
       // Routes rules
       new Route("rules-back-to-menu", "game-menu", "rules"),
+      // Routes rules
+      new Route("about-back-to-menu", "game-menu", "about"),
       // Routes quizz preparation
       new Route(
         "quizz-preparation-back-to-menu",

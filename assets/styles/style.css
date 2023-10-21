@@ -32,6 +32,7 @@ main {
 
 #leaderboard,
 #rules,
+#about,
 #quizz-preparation,
 #quizz-game,
 #quizz-end,
@@ -64,6 +65,7 @@ section {
 /* Anchors */
 a {
   text-decoration: none;
+  color: #6489de;
 }
 
 /* Colors (generated from https://www.materialpalette.com/):
@@ -262,6 +264,11 @@ nav > a {
 
 #leaderboard-scores > ol > li:first-child::before {
   color: #ffc107;
+}
+
+/* ABOUT */
+#about {
+  text-align: center;
 }
 
 /* QUIZZ PREPARATION */
