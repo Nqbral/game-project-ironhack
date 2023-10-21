@@ -33,6 +33,10 @@ class Game {
    * Init the listeners
    */
   initListeners() {
+    document.getElementById("start-menu").addEventListener("click", () => {
+      this.settings.resetSettings();
+    });
+
     this.startQuizzButton.addEventListener("click", () => {
       this.startGame();
     });
@@ -64,6 +68,11 @@ class Game {
    */
   async startGame() {
     if (this.checkValiditySettings().length > 0) {
+      new ModalError(
+        "Erreur lors de la saisie",
+        "Vous n'avez pas saisi correctement le formulaire de préparation du quizz :",
+        this.checkValiditySettings()
+      );
       return;
     }
 
