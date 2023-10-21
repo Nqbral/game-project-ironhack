@@ -192,15 +192,29 @@
 
       <!-- End quizz -->
       <section id="quizz-end">
-        <h2>Fin du quizz !</h2>
-        <div id="score-quizz-game">
-          <h3>Votre score</h3>
-          <p id="paragraph-score">8/10</p>
-        </div>
-        <div id="buttons-end-quizz">
-          <button id="quizz-end-restart">Refaire un quizz</button>
-          <button id="quizz-end-show-leaderboard">Voir classement</button>
-          <button id="quizz-end-back-to-menu">Retour au menu</button>
+        <div class="card">
+          <h2>Fin du quizz !</h2>
+          <div id="score-quizz-game">
+            <h3>Votre score</h3>
+            <p id="paragraph-score"></p>
+          </div>
+          <div id="answers-quizz">
+            <ul id="list-answers"></ul>
+          </div>
+          <div id="buttons-end-quizz">
+            <button class="button primary-button" id="quizz-end-restart">
+              REFAIRE UN QUIZZ
+            </button>
+            <button
+              class="button outlined-button"
+              id="quizz-end-show-leaderboard"
+            >
+              VOIR LE CLASSEMENT
+            </button>
+            <button class="button accent-button" id="quizz-end-back-to-menu">
+              RETOUR AU MENU
+            </button>
+          </div>
         </div>
       </section>
 
@@ -229,6 +243,10 @@
       <script type="text/javascript" src="scripts/question/image.js"></script>
       <script type="text/javascript" src="scripts/question/emoji.js"></script>
       <script type="text/javascript" src="scripts/question/music.js"></script>
+      <script type="text/javascript" src="scripts/answer.js"></script>
+      <script type="text/javascript" src="scripts/answer/image.js"></script>
+      <script type="text/javascript" src="scripts/answer/emoji.js"></script>
+      <script type="text/javascript" src="scripts/answer/music.js"></script>
       <script type="text/javascript" src="scripts/settings.js"></script>
       <script type="text/javascript" src="scripts/modal_error.js"></script>
       <script type="text/javascript" src="scripts/game.js"></script>

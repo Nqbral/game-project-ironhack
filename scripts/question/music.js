@@ -17,11 +17,13 @@ class QuestionMusic extends Question {
   displayQuestion() {
     this.emojisQuestionSection.style.display = "none";
     this.imageQuestionSection.style.display = "none";
-    this.musicPlayer.loadTrack(
-      `../../assets/sounds/${this.themeQuestion}/${this.musicSrc}`
-    );
+    this.musicPlayer.loadTrack(this.getMusicSrc());
     this.updateQuestion();
     this.musicQuestionSection.style.display = "flex";
+  }
+
+  getMusicSrc() {
+    return `../../assets/sounds/${this.themeQuestion}/${this.musicSrc}`;
   }
 
   /**
