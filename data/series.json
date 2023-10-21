@@ -1,4 +1,4 @@
-{
+[
   {
     "type": "emojis",
     "emojis": "👑 🐉 🏰",
@@ -26,132 +26,132 @@
   },
   {
     "type": "emojis",
-    "emojis": "🏫 📚 🍆"
+    "emojis": "🏫 📚 🍆",
     "answers": ["Sex Education"]
   },
   {
     "type": "emojis",
-    "emojis": "🐰 🃏 🔥 🏙️"
+    "emojis": "🐰 🃏 🔥 🏙️",
     "answers": ["Alice in Borderland"]
   },
   {
     "type": "emojis",
-    "emojis": "🍻 ⚽ 🧔 🍏"
+    "emojis": "🍻 ⚽ 🧔 🍏",
     "answers": ["Ted Lasso"]
   },
   {
     "type": "emojis",
-    "emojis": "🖖 🌌 🚀 👽"
+    "emojis": "🖖 🌌 🚀 👽",
     "answers": ["Star Trek"]
   },
   {
     "type": "emojis",
-    "emojis": "🔬 🚐 💰"
+    "emojis": "🔬 🚐 💰",
     "answers": ["Breaking Bad"]
   },
   {
     "type": "emojis",
-    "emojis": "🔍 🕵️ 🖋️ 🎻"
+    "emojis": "🔍 🕵️ 🖋️ 🎻",
     "answers": ["Sherlock"]
   },
   {
     "type": "emojis",
-    "emojis": "🏝️ ✈️ 📻 ❓"
+    "emojis": "🏝️ ✈️ 📻 ❓",
     "answers": ["Lost", "Lost : les disparus"]
   },
   {
     "type": "emojis",
-    "emojis": "🏠 🍩 👪"
+    "emojis": "🏠 🍩 👪",
     "answers": ["Les Simpson", "The Simpsons"]
   },
   {
     "type": "emojis",
-    "emojis": "🏥 👨‍⚕️ 👩‍⚕️ 😂"
+    "emojis": "🏥 👨‍⚕️ 👩‍⚕️ 😂",
     "answers": ["Scrubs"]
   },
   {
     "type": "emojis",
-    "emojis": "🏢 🕴️ 🚬 📈"
+    "emojis": "🏢 🕴️ 🚬 📈",
     "answers": ["Mad Men"]
   },
   {
     "type": "emojis",
-    "emojis": "🚲 👽 🧠 🚪"
+    "emojis": "🚲 👽 🧠 🚪",
     "answers": ["Stranger Things"]
   },
   {
     "type": "emojis",
-    "emojis": "🇺🇸 🏛️ 🃏 🤯"
+    "emojis": "🇺🇸 🏛️ 🃏 🤯",
     "answers": ["House of Cards"]
   },
   {
     "type": "emojis",
-    "emojis": "💻 🤖 🕵️‍♂ 🔓"
+    "emojis": "💻 🤖 🕵️‍♂ 🔓",
     "answers": ["Mr Robot"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "⚒️ 🛡️ 🌊 🛶",
     "answers": ["Vikings"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🧛‍♂️ 🔪 👱‍♀️",
     "answers": ["Buffy contre les vampires", "Buffy, the vampire slayer"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🏍️ 💀 🔪",
     "answers": ["Sons of Anarchy"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🍊 👭 🚓 👮‍♀️",
     "answers": ["Orange is the New Black"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "☢️ 💥 🚨",
     "answers": ["Chernobyl"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🏢 🔒 🏃 💼",
     "answers": ["Prison Break"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "⏲️ 👮 💣 🔫",
     "answers": ["24 Heures Chrono", "24"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "💰 💊 🇨🇴",
     "answers": ["Narcos"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "⚔️ 🛡️ 🏟️ 🏛️",
     "answers": ["Spartacus"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🕶️ 🕵️‍♂️ 🌍 🔐 🇫🇷",
     "answers": ["Le Bureau des Légendes"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🔪 🔬 🌆 💉",
     "answers": ["Dexter"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "🌍 🧟‍♂️ 🔫 👧🏻",
     "answers": ["The Last of Us"]
   },
   {
-    "type": "emojis"
+    "type": "emojis",
     "emojis": "👮‍♂️ 👮‍♀️ 🚓 🤣",
     "answers": ["Brooklyn 99", "Brooklyn Nine-Nine"]
   }
-}
+]

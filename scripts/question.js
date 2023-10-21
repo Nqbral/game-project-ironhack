@@ -5,9 +5,10 @@ class Question {
    * @param {string} themeQuestion theme of the question
    * @param {array[string]} answers list of possible answers
    */
-  constructor(themeQuestion, answers) {
+  constructor(themeQuestion, answers, numberQuestion) {
     this.themeQuestion = themeQuestion;
     this.answers = answers;
+    this.numberQuestion = numberQuestion;
     this.imageQuestionSection = document.getElementById("image-question");
     this.emojisQuestionSection = document.getElementById("emojis-question");
     this.musicQuestionSection = document.getElementById("music-question");
@@ -15,7 +16,8 @@ class Question {
   }
 
   updateQuestion() {
-    this.question.innerHTML = this.getQuestion();
+    this.question.innerHTML =
+      "Question " + this.numberQuestion + " : " + this.getQuestion();
   }
 
   /**

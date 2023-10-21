@@ -102,11 +102,33 @@ class Game {
     this.questions = [];
     this.answers = [];
 
+    this.setUpQuizzName();
+
     await this.initQuestions().then(() => {
       this.questionInProgress = this.questions[this.indexQuestion];
       this.questionInProgress.displayQuestion();
       this.showGame();
     });
+  }
+
+  setUpQuizzName() {
+    let titleQuizz = "";
+
+    switch (this.settings.themeQuestions) {
+      case "anime":
+        titleQuizz = "Quizz sur les animes";
+        break;
+      case "series":
+        titleQuizz = "Quizz sur les séries";
+        break;
+      case "movies":
+        titleQuizz = "Quizz sur les films";
+        break;
+      default:
+        break;
+    }
+
+    document.getElementById("quizz-name").innerHTML = titleQuizz;
   }
 
   /**
@@ -147,9 +169,7 @@ class Game {
   async initQuestions() {
     let jsonQuestions = await this.loadJsonQuestions();
 
-    this.questions = this.shuffleQuestions(
-      this.filterQuestions(jsonQuestions)
-    ).slice(0, 5);
+    this.questions = this.filterQuestions(jsonQuestions).slice(0, 5);
   }
 
   /**
@@ -161,36 +181,39 @@ class Game {
    * @returns array
    */
   filterQuestions(questions) {
-    return questions
-      .filter((question) => {
+    return this.shuffleQuestions(
+      questions.filter((question) => {
         return this.settings.typeQuestions.includes(question.type);
       })
-      .map((question) => {
-        switch (question.type) {
-          case "image":
-            return new QuestionImage(
-              question.src,
-              this.settings.themeQuestions,
-              question.answers
-            );
-          case "emojis":
-            return new QuestionEmoji(
-              question.emojis,
-              this.settings.themeQuestions,
-              question.answers
-            );
-          case "music":
-            return new QuestionMusic(
-              question.src,
-              this.settings.themeQuestions,
-              question.answers,
-              this.musicPlayer
-            );
-          default:
-            console.log(`Question type ${question.type} not handled.`);
-            return null;
-        }
-      });
+    ).map((question, index) => {
+      switch (question.type) {
+        case "image":
+          return new QuestionImage(
+            question.src,
+            this.settings.themeQuestions,
+            question.answers,
+            index + 1
+          );
+        case "emojis":
+          return new QuestionEmoji(
+            question.emojis,
+            this.settings.themeQuestions,
+            question.answers,
+            index + 1
+          );
+        case "music":
+          return new QuestionMusic(
+            question.src,
+            this.settings.themeQuestions,
+            question.answers,
+            this.musicPlayer,
+            index + 1
+          );
+        default:
+          console.log(`Question type ${question.type} not handled.`);
+          return null;
+      }
+    });
   }
 
   /**

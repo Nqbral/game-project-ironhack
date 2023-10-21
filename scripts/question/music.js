@@ -7,8 +7,8 @@ class QuestionMusic extends Question {
    * @param {array[string]} answers list of possible answers
    * @param {MusicPlayer} musicPlayer
    */
-  constructor(musicSrc, themeQuestion, answers, musicPlayer) {
-    super(themeQuestion, answers);
+  constructor(musicSrc, themeQuestion, answers, musicPlayer, numberQuestion) {
+    super(themeQuestion, answers, numberQuestion);
 
     this.musicSrc = musicSrc;
     this.musicPlayer = musicPlayer;

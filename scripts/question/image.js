@@ -6,8 +6,8 @@ class QuestionImage extends Question {
    * @param {string} themeQuestion theme of the question
    * @param {array[string]} answers list of possible answers
    */
-  constructor(imageSrc, themeQuestion, answers) {
-    super(themeQuestion, answers);
+  constructor(imageSrc, themeQuestion, answers, numberQuestion) {
+    super(themeQuestion, answers, numberQuestion);
 
     this.imgSrc = imageSrc;
     this.imageQuestionContent = document.getElementById(

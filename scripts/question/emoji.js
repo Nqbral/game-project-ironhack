@@ -6,8 +6,8 @@ class QuestionEmoji extends Question {
    * @param {string} themeQuestion theme of the question
    * @param {array[string]} answers list of possible answers
    */
-  constructor(emojis, themeQuestion, answers) {
-    super(themeQuestion, answers);
+  constructor(emojis, themeQuestion, answers, numberQuestion) {
+    super(themeQuestion, answers, numberQuestion);
 
     this.emojis = emojis;
     this.emojisQuestionContent = document.getElementById(
