@@ -266,9 +266,25 @@ nav > a {
   color: #ffc107;
 }
 
-/* ABOUT */
-#about {
+/* RULES & ABOUT */
+#rules p,
+#about p {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#rules button,
+#about button {
+  margin-top: 20px;
+}
+
+#rules ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 /* QUIZZ PREPARATION */
@@ -532,11 +548,9 @@ nav > a {
   align-items: center;
 }
 
-/* .music-player-answer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+.play-pause-track-answer {
+  font-size: 2rem;
+}
 
 .slider-container-answer {
   display: flex;

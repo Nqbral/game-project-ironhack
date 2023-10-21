@@ -178,7 +178,7 @@ class AnswerMusic extends Answer {
 
   pauseTrack() {
     this.currentTrack.pause();
-    this.isPlaying = false;
+    this.currentTrack.classList.remove("playing");
     this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
   }
 
