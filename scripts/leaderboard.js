@@ -45,8 +45,8 @@ class Leaderboard {
       return 0;
     });
 
-    for (let i = 0; i < this.scores.length; i++) {
-      let score = this.scores[i];
+    for (let i = 0; i < scoresSorted.length; i++) {
+      let score = scoresSorted[i];
 
       element.appendChild(score.initHtmlScore());
     }
