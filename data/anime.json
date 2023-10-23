@@ -1,58 +1,12 @@
 [
   {
-    "type": "image",
-    "src": "aot.png",
-    "answers": ["L'Attaque des Titans", "Attack on Titans", "Shingeki no Kyojin"]
-  },
-  {
-    "type": "image",
-    "src": "mha.png",
-    "answers": ["My Hero Academia"]
-  },
-  {
-    "type": "image",
-    "src": "black_clover.png",
-    "answers": ["Black Clover"]
-  },
-  {
-    "type": "image",
-    "src": "bleach.png",
-    "answers": ["Bleach"]
-  },
-  {
-    "type": "image",
-    "src": "jujutsu_kaisen.png",
-    "answers": ["Jujutsu Kaisen"]
-  },
-  {
-    "type": "image",
-    "src": "naruto.png",
-    "answers": ["Naruto"]
-  },
-  {
-    "type": "image",
-    "src": "pokemon.png",
-    "answers": ["Pokemon"]
-  },
-  {
-    "type": "image",
-    "src": "one_piece.png",
-    "answers": ["One Piece"]
-  },
-  {
-    "type": "image",
-    "src": "demon_slayer.png",
-    "answers": ["Demon Slayer"]
-  },
-  {
-    "type": "image",
-    "src": "kuroko.png",
-    "answers": ["Kuroko no Basket"]
-  },
-  {
     "type": "emojis",
     "emojis": "⚔️ ⚜️ ⛩ 🔰",
-    "answers": ["L'Attaque des Titans", "Attack on Titans", "Shingeki no Kyojin"]
+    "answers": [
+      "L'Attaque des Titans",
+      "Attack on Titans",
+      "Shingeki no Kyojin"
+    ]
   },
   {
     "type": "emojis",
