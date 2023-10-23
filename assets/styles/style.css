@@ -112,7 +112,19 @@ h3 {
   margin: 0.5rem auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  min-width: 25vw;
+  min-width: 30vw;
+}
+
+@media (width > 768px) {
+  .button {
+    min-width: 25vw;
+  }
+}
+
+@media (width > 1024px) {
+  .button {
+    min-width: 20vw;
+  }
 }
 
 .primary-button,
@@ -237,6 +249,18 @@ nav > a {
   min-width: 60vw;
 }
 
+@media (width > 768px) {
+  #game-menu .button {
+    min-width: 40vw;
+  }
+}
+
+@media (width > 1024px) {
+  #game-menu .button {
+    min-width: 30vw;
+  }
+}
+
 /* LEADERBOARD */
 #leaderboard-score {
   display: flex;
@@ -344,10 +368,6 @@ nav > a {
   background-color: #ffc107;
 }
 
-#buttons-list-quizz-prep > button {
-  min-width: 35vw;
-}
-
 #player-name {
   padding-bottom: 15px;
 }
@@ -355,22 +375,25 @@ nav > a {
 /* MODAL ERROR */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100vw;
+  min-height: 100vh;
   border: none;
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #3d3c40;
-  margin: 50% auto;
   padding: 0 10px;
   border-radius: 5px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
@@ -401,11 +424,12 @@ nav > a {
 }
 
 #modal-message-errors {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #list-errors-modal {
+  padding-left: 30px;
   padding-bottom: 15px;
 }
 
@@ -413,6 +437,22 @@ nav > a {
 /* Question and Input */
 #question-card {
   gap: 1rem;
+}
+
+#question-card > input {
+  min-width: 50vw;
+}
+
+@media (width > 768px) {
+  #question-card > input {
+    min-width: 35vw;
+  }
+}
+
+@media (width > 1024px) {
+  #question-card > input {
+    min-width: 25vw;
+  }
 }
 
 #question {
@@ -429,14 +469,11 @@ nav > a {
   justify-content: space-between;
 }
 
-#buttons-quizz > button {
-  min-width: 35vw;
-}
-
 /* Image Question */
 #image-question-content {
   margin: 0 auto;
   max-width: 75vw;
+  max-height: 50vh;
 }
 
 /* Emojis Question */
@@ -521,6 +558,17 @@ nav > a {
 
 .answer-content {
   min-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.answer-content p {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .good-answer {

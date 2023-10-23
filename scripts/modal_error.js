@@ -41,7 +41,7 @@ class ModalError {
   }
 
   initModal() {
-    this.modal.style.display = "block";
+    this.modal.style.display = "flex";
   }
 
   closeModal() {
