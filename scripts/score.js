@@ -1,4 +1,9 @@
 class Score {
+  /**
+   * Constructor Score
+   *
+   * @param {Player} player player
+   */
   constructor(player) {
     this.player = player;
     this.score = 0;

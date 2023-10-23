@@ -1,4 +1,7 @@
 class Settings {
+  /**
+   * Constructor Settings
+   */
   constructor() {
     this.themeQuestions = "";
     this.typeQuestions = [];
@@ -9,6 +12,9 @@ class Settings {
     this.initListEventListeners();
   }
 
+  /**
+   * Init the event listeners for all the element of the lists (theme, question type)
+   */
   initListEventListeners() {
     let childrenThemeList = this.themeList.children;
     let childrenQuestionTypeList = this.questionTypeList.children;
@@ -31,6 +37,11 @@ class Settings {
     }
   }
 
+  /**
+   * Select theme
+   *
+   * @param {Element} element
+   */
   selectTheme(element) {
     this.themeQuestions = "";
     let valueAttributeElement = element.getAttribute("value");
@@ -52,6 +63,11 @@ class Settings {
     }
   }
 
+  /**
+   * Select type question
+   *
+   * @param {Element} element
+   */
   selectTypeQuestion(element) {
     element.classList.toggle("selected");
     let valueAttributeElement = element.getAttribute("value");
@@ -67,11 +83,17 @@ class Settings {
     }
   }
 
+  /**
+   * Reset settings
+   */
   resetSettings() {
     this.resetThemeSettings();
     this.resetQuestionTypesSettings();
   }
 
+  /**
+   * Reset theme settings
+   */
   resetThemeSettings() {
     this.themeQuestions = "anime";
     let childrenThemeList = this.themeList.children;
@@ -86,6 +108,9 @@ class Settings {
     }
   }
 
+  /**
+   * Reset question type settings
+   */
   resetQuestionTypesSettings() {
     this.typeQuestions = ["image", "emojis", "music"];
     let childrenQuestionTypeList = this.questionTypeList.children;

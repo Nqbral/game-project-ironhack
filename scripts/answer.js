@@ -1,4 +1,13 @@
 class Answer {
+  /**
+   * Constructor Answer
+   *
+   * @param {string} answer answer
+   * @param {Question} question question
+   * @param {bool} isAnswerOK is the answer ok according to the answers of the question
+   * @param {bool} isAnswerGiven does the user give an answer
+   * @param {int} numberQuestion number of the question in the quizz
+   */
   constructor(answer, question, isAnswerOK, isAnswerGiven, numberQuestion) {
     this.answer = answer;
     this.question = question;
@@ -7,6 +16,11 @@ class Answer {
     this.numberQuestion = numberQuestion;
   }
 
+  /**
+   * Init the html code to display the answer
+   *
+   * @returns Element
+   */
   generateHtmlAnswer() {
     let elementList = document.createElement("li");
 
@@ -24,6 +38,11 @@ class Answer {
     return elementList;
   }
 
+  /**
+   * Init the html code to display the question of the answer
+   *
+   * @returns Element
+   */
   generateQuestion() {
     let elementQuestion = document.createElement("p");
     let question = this.question.getQuestion();
@@ -33,6 +52,11 @@ class Answer {
     return elementQuestion;
   }
 
+  /**
+   * Init the html code to display the answer given by the user
+   *
+   * @returns Element
+   */
   generateAnswerGiven() {
     let elementAnswerGiven = document.createElement("p");
     let spanClass = "wrong-answer";
@@ -50,6 +74,11 @@ class Answer {
     return elementAnswerGiven;
   }
 
+  /**
+   * Init the html code to display the good answers of the question
+   *
+   * @returns Element
+   */
   genereateGoodAnswers() {
     let elementGoodAnswers = document.createElement("p");
     let answersFormatted = this.question.answers.join(" OU ");

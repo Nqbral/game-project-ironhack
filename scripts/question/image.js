@@ -26,6 +26,11 @@ class QuestionImage extends Question {
     this.imageQuestionSection.style.display = "flex";
   }
 
+  /**
+   * Get the image source
+   *
+   * @returns string
+   */
   getImageSrc() {
     return `../../assets/images/${this.themeQuestion}/${this.imgSrc}`;
   }

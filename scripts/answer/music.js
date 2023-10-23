@@ -1,10 +1,35 @@
 class AnswerMusic extends Answer {
-  constructor(answer, question, isAnswerOK, isAnswerGiven, numberQuestion) {
+  /**
+   * Constructor AnswerMusic
+   *
+   * @param {string} answer answer
+   * @param {Question} question question
+   * @param {bool} isAnswerOK is the answer ok according to the answers of the question
+   * @param {bool} isAnswerGiven does the user give an answer
+   * @param {int} numberQuestion number of the question in the quizz
+   * @param {string} volumeMusicPlayerQuizz volume of the music player of the quizz
+   */
+  constructor(
+    answer,
+    question,
+    isAnswerOK,
+    isAnswerGiven,
+    numberQuestion,
+    volumeMusicPlayerQuizz
+  ) {
     super(answer, question, isAnswerOK, isAnswerGiven, numberQuestion);
 
-    this.updateTimer = null;
+    this.musicPlayer = new MusicPlayerAnswer(
+      numberQuestion,
+      volumeMusicPlayerQuizz
+    );
   }
 
+  /**
+   * Init the html code to display the answer
+   *
+   * @returns Element
+   */
   generateTypeAnswer() {
     let elementTypeAnswer = document.createElement("div");
     elementTypeAnswer.classList.add("music-answer-question");
@@ -17,6 +42,11 @@ class AnswerMusic extends Answer {
     return elementTypeAnswer;
   }
 
+  /**
+   * Init the html code for the audio track
+   *
+   * @returns Element
+   */
   generateAudioTrack() {
     let elementAudio = document.createElement("audio");
     elementAudio.classList.add("audio-track-answer");
@@ -26,6 +56,11 @@ class AnswerMusic extends Answer {
     return elementAudio;
   }
 
+  /**
+   * Init the html code to display the play pause button
+   *
+   * @returns Element
+   */
   generatePlayPauseTrack() {
     let elementPlayPauseTrack = document.createElement("div");
     elementPlayPauseTrack.classList.add("play-pause-track-answer");
@@ -39,6 +74,11 @@ class AnswerMusic extends Answer {
     return elementPlayPauseTrack;
   }
 
+  /**
+   * Init the html code to display the time slider
+   *
+   * @returns Element
+   */
   generateTimeSlider() {
     let elementSlider = document.createElement("div");
     elementSlider.classList.add("slider-container-answer");
@@ -69,6 +109,11 @@ class AnswerMusic extends Answer {
     return elementSlider;
   }
 
+  /**
+   * Init the html code to display the volume slider
+   *
+   * @returns Element
+   */
   generateVolumeSlider() {
     let elementSlider = document.createElement("div");
     elementSlider.classList.add("slider-container-answer");
@@ -93,155 +138,5 @@ class AnswerMusic extends Answer {
     elementSlider.appendChild(elementVolumeUp);
 
     return elementSlider;
-  }
-
-  initGetterElements() {
-    this.currentTrack = document.getElementById(
-      "audio-track-answer-" + this.numberQuestion
-    );
-    this.playPauseBtn = document.getElementById(
-      "play-pause-track-answer-" + this.numberQuestion
-    );
-    this.seekSlider = document.getElementById(
-      "seek-slider-answer-" + this.numberQuestion
-    );
-    this.volumeSlider = document.getElementById(
-      "volume-slider-answer-" + this.numberQuestion
-    );
-    this.currentTime = document.getElementById(
-      "current-time-answer-" + this.numberQuestion
-    );
-    this.totalDuration = document.getElementById(
-      "total-duration-answer-" + this.numberQuestion
-    );
-  }
-
-  initListeners() {
-    this.playPauseBtn.addEventListener("click", () => {
-      this.playPauseTrack();
-    });
-
-    this.seekSlider.addEventListener("change", () => {
-      this.seekTo();
-    });
-
-    this.volumeSlider.addEventListener("change", () => {
-      this.setVolume();
-    });
-
-    this.currentTrack.addEventListener("ended", () => {
-      this.endTrack();
-    });
-  }
-
-  loadTrack() {
-    this.currentTrack.load();
-
-    this.updateTimer = setInterval(() => {
-      this.seekUpdate();
-    }, 1000);
-  }
-
-  playPauseTrack() {
-    if (!this.currentTrack.classList.contains("playing")) {
-      this.pauseAllTracks();
-      this.playTrack();
-      return;
-    }
-    this.pauseTrack();
-  }
-
-  pauseAllTracks() {
-    let audioTracks = document.getElementsByClassName("audio-track-answer");
-    let playingButtons = document.getElementsByClassName(
-      "play-pause-track-answer"
-    );
-
-    for (let i = 0; i < audioTracks.length; i++) {
-      let audioTrack = audioTracks[i];
-      let playingButton = playingButtons[i];
-
-      if (audioTrack.classList.contains("playing")) {
-        audioTrack.classList.remove("playing");
-        audioTrack.pause();
-        playingButton.innerHTML = '<i class="fa fa-play-circle"></i>';
-      }
-    }
-  }
-
-  playTrack() {
-    this.currentTrack.play();
-    this.currentTrack.classList.add("playing");
-
-    this.playPauseBtn.innerHTML = '<i class="fa fa-pause-circle"></i>';
-  }
-
-  pauseTrack() {
-    this.currentTrack.pause();
-    this.currentTrack.classList.remove("playing");
-    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
-  }
-
-  endTrack() {
-    this.currentTrack.classList.remove("playing");
-    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
-  }
-
-  seekTo() {
-    let seekto = this.currentTrack.duration * (this.seekSlider.value / 100);
-
-    this.currentTrack.currentTime = seekto;
-  }
-
-  setVolume() {
-    let audioTracks = document.getElementsByClassName("audio-track-answer");
-    let sliderVolumes = document.getElementsByClassName("volume-slider-answer");
-
-    for (let i = 0; i < audioTracks.length; i++) {
-      let audio = audioTracks[i];
-      let sliderVolume = sliderVolumes[i];
-
-      sliderVolume.value = this.volumeSlider.value;
-      audio.volume = this.volumeSlider.value / 100;
-    }
-  }
-
-  seekUpdate() {
-    let seekPosition = 0;
-
-    // Check if the current track duration is a legible number
-    if (!isNaN(this.currentTrack.duration)) {
-      seekPosition =
-        this.currentTrack.currentTime * (100 / this.currentTrack.duration);
-      this.seekSlider.value = seekPosition;
-
-      // Calculate the time left and the total duration
-      let currentMinutes = Math.floor(this.currentTrack.currentTime / 60);
-      let currentSeconds = Math.floor(
-        this.currentTrack.currentTime - currentMinutes * 60
-      );
-      let durationMinutes = Math.floor(this.currentTrack.duration / 60);
-      let durationSeconds = Math.floor(
-        this.currentTrack.duration - durationMinutes * 60
-      );
-
-      // Add a zero to the single digit time values
-      if (currentSeconds < 10) {
-        currentSeconds = "0" + currentSeconds;
-      }
-      if (durationSeconds < 10) {
-        durationSeconds = "0" + durationSeconds;
-      }
-      if (currentMinutes < 10) {
-        currentMinutes = "0" + currentMinutes;
-      }
-      if (durationMinutes < 10) {
-        durationMinutes = "0" + durationMinutes;
-      }
-
-      // Display the updated duration
-      this.currentTime.textContent = currentMinutes + ":" + currentSeconds;
-      this.totalDuration.textContent = durationMinutes + ":" + durationSeconds;
-    }
   }
 }
