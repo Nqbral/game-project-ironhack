@@ -14,6 +14,9 @@ class QuestionMusic extends Question {
     this.musicPlayer = musicPlayer;
   }
 
+  /**
+   * Display the music section
+   */
   displayQuestion() {
     this.emojisQuestionSection.style.display = "none";
     this.imageQuestionSection.style.display = "none";
@@ -22,6 +25,11 @@ class QuestionMusic extends Question {
     this.musicQuestionSection.style.display = "flex";
   }
 
+  /**
+   * Get the music source
+   *
+   * @returns string
+   */
   getMusicSrc() {
     return `../../assets/sounds/${this.themeQuestion}/${this.musicSrc}`;
   }

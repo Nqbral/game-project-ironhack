@@ -1,4 +1,13 @@
 class AnswerMusic extends Answer {
+  /**
+   * Constructor AnswerMusic
+   *
+   * @param {string} answer answer
+   * @param {Question} question question
+   * @param {bool} isAnswerOK is the answer ok according to the answers of the question
+   * @param {bool} isAnswerGiven does the user give an answer
+   * @param {int} numberQuestion number of the question in the quizz
+   */
   constructor(answer, question, isAnswerOK, isAnswerGiven, numberQuestion) {
     super(answer, question, isAnswerOK, isAnswerGiven, numberQuestion);
 
