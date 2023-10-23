@@ -3,12 +3,12 @@ class Game {
    * Constructor Game
    *
    * @param {Leaderboard} leaderboard leaderboard
-   * @param {MusicPlayer} musicPlayer music player
+   * @param {MusicPlayerQuizz} musicPlayerQuizz music player quizz
    * @param {Settings} settings settings
    */
-  constructor(leaderboard, musicPlayer, settings) {
+  constructor(leaderboard, musicPlayerQuizz, settings) {
     this.leaderboard = leaderboard;
-    this.musicPlayer = musicPlayer;
+    this.musicPlayerQuizz = musicPlayerQuizz;
     this.settings = settings;
     this.questions = [];
     this.answers = [];
@@ -111,6 +111,9 @@ class Game {
     });
   }
 
+  /**
+   * Set up the quizz name and update the html code
+   */
   setUpQuizzName() {
     let titleQuizz = "";
 
@@ -206,7 +209,7 @@ class Game {
             question.src,
             this.settings.themeQuestions,
             question.answers,
-            this.musicPlayer,
+            this.musicPlayerQuizz,
             index + 1
           );
         default:
@@ -242,6 +245,13 @@ class Game {
     this.sectionQuizzGame.style.display = "flex";
   }
 
+  /**
+   * Generate the answer
+   *
+   * @param {bool} isAnswerOK is the answer ok
+   * @param {bool} isAnswerGiven is the answer given
+   * @returns
+   */
   generateAnswer(isAnswerOK, isAnswerGiven) {
     let valueAnswer = this.answerInput.value;
 
@@ -268,10 +278,9 @@ class Game {
           this.questionInProgress,
           isAnswerOK,
           isAnswerGiven,
-          this.indexQuestion + 1
+          this.indexQuestion + 1,
+          this.musicPlayerQuizz.currentTrack.volume
         );
-      default:
-        return null;
     }
   }
 
@@ -307,9 +316,9 @@ class Game {
    * Display the next question or end the game if it's over
    */
   nextQuestion() {
-    if (this.musicPlayer.isPlaying) {
-      this.musicPlayer.pauseTrack();
-      this.musicPlayer.resetValues();
+    if (this.musicPlayerQuizz.isPlaying) {
+      this.musicPlayerQuizz.pauseTrack();
+      this.musicPlayerQuizz.resetValues();
     }
 
     this.indexQuestion++;
@@ -354,17 +363,13 @@ class Game {
 
       listAnswers.appendChild(answer.generateHtmlAnswer());
 
-      // Specitif for music questions
-      if (typeof answer.initGetterElements === "function") {
-        answer.initGetterElements();
-      }
+      this.questionInProgress.constructor.name;
 
-      if (typeof answer.initListeners === "function") {
-        answer.initListeners();
-      }
-
-      if (typeof answer.loadTrack === "function") {
-        answer.loadTrack();
+      if (answer.constructor.name === "AnswerMusic") {
+        answer.musicPlayer.initGetterElements();
+        answer.musicPlayer.initEventListeners();
+        answer.musicPlayer.loadTrack();
+        answer.musicPlayer.initVolume();
       }
     }
   }

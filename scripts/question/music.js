@@ -5,13 +5,19 @@ class QuestionMusic extends Question {
    * @param {string} musicSrc image source
    * @param {string} themeQuestion theme of the question
    * @param {array[string]} answers list of possible answers
-   * @param {MusicPlayer} musicPlayer
+   * @param {MusicPlayerQuizz} musicPlayerQuizz
    */
-  constructor(musicSrc, themeQuestion, answers, musicPlayer, numberQuestion) {
+  constructor(
+    musicSrc,
+    themeQuestion,
+    answers,
+    musicPlayerQuizz,
+    numberQuestion
+  ) {
     super(themeQuestion, answers, numberQuestion);
 
     this.musicSrc = musicSrc;
-    this.musicPlayer = musicPlayer;
+    this.musicPlayerQuizz = musicPlayerQuizz;
   }
 
   /**
@@ -20,7 +26,7 @@ class QuestionMusic extends Question {
   displayQuestion() {
     this.emojisQuestionSection.style.display = "none";
     this.imageQuestionSection.style.display = "none";
-    this.musicPlayer.loadTrack(this.getMusicSrc());
+    this.musicPlayerQuizz.loadTrack(this.getMusicSrc());
     this.updateQuestion();
     this.musicQuestionSection.style.display = "flex";
   }

@@ -1,81 +1,59 @@
 class MusicPlayer {
+  /**
+   * Constructor music player
+   */
   constructor() {
-    this.isPlaying = false;
     this.updateTimer = null;
-
-    this.playPauseBtn = document.getElementById("playpause-track");
-    this.seekSlider = document.getElementById("seek-slider");
-    this.volumeSlider = document.getElementById("volume-slider");
-    this.currentTime = document.getElementById("current-time");
-    this.totalDuration = document.getElementById("total-duration");
-    this.currentTrack = document.getElementById("audio-track");
-    this.currentTrack.volume = "0.5";
   }
 
-  loadTrack(src) {
-    this.resetValues();
-
-    this.currentTrack.src = src;
-    this.currentTrack.load();
-    this.playpauseTrack();
-
-    this.currentTrack.addEventListener("ended", () => {
-      this.endTrack();
-    });
-
-    this.updateTimer = setInterval(() => {
-      this.seekUpdate();
-    }, 1000);
-  }
-
+  /**
+   * Reset values of the music player
+   */
   resetValues() {
     clearInterval(this.updateTimer);
     this.currentTime.textContent = "00:00";
     this.totalDuration.textContent = "00:00";
     this.seekSlider.value = 0;
-    this.isPlaying = false;
   }
 
-  playpauseTrack() {
-    if (!this.isPlaying) {
-      this.playTrack();
-      return;
-    }
-    this.pauseTrack();
+  /**
+   * Init the event listeners for music player
+   */
+  initEventListeners() {
+    this.playPauseBtn.addEventListener("click", () => {
+      this.playPauseTrack();
+    });
+
+    this.seekSlider.addEventListener("change", () => {
+      this.seekTo();
+    });
+
+    this.volumeSlider.addEventListener("change", () => {
+      this.setVolume();
+    });
+
+    this.currentTrack.addEventListener("ended", () => {
+      this.endTrack();
+    });
   }
 
-  playTrack() {
-    this.currentTrack.play();
-    this.isPlaying = true;
-
-    this.playPauseBtn.innerHTML = '<i class="fa fa-pause-circle"></i>';
-  }
-
-  pauseTrack() {
-    this.currentTrack.pause();
-    this.isPlaying = false;
-    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
-  }
-
-  endTrack() {
-    this.isPlaying = false;
-    this.playPauseBtn.innerHTML = '<i class="fa fa-play-circle"></i>';
-  }
-
+  /**
+   * Set the timer according to the seek slider
+   */
   seekTo() {
-    // Calculate the seek position by the
-    // percentage of the seek slider
-    // and get the relative duration to the track
     let seekto = this.currentTrack.duration * (this.seekSlider.value / 100);
 
-    // Set the current track position to the calculated seek position
     this.currentTrack.currentTime = seekto;
   }
 
+  /** Set the volume according to the volume slider */
   setVolume() {
     this.currentTrack.volume = this.volumeSlider.value / 100;
   }
 
+  /**
+   * Update the duration and current time
+   */
   seekUpdate() {
     let seekPosition = 0;
 
