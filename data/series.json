@@ -121,11 +121,6 @@
   },
   {
     "type": "emojis",
-    "emojis": "⏲️ 👮 💣 🔫",
-    "answers": ["24 Heures Chrono", "24"]
-  },
-  {
-    "type": "emojis",
     "emojis": "💰 💊 🇨🇴",
     "answers": ["Narcos"]
   },
