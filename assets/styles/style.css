@@ -557,6 +557,7 @@ nav > a {
 
 #player-music > img {
   max-width: 40vw;
+  max-height: 20vh;
 }
 
 #playpause-track {
@@ -583,10 +584,6 @@ nav > a {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-#buttons-end-quizz > button {
-  min-width: 30vw;
 }
 
 #list-answers {
