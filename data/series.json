@@ -1,5 +1,155 @@
 [
   {
+    "type": "image",
+    "src": "arcane.png",
+    "answers": ["Arcane"]
+  },
+  {
+    "type": "image",
+    "src": "better_call_saul.png",
+    "answers": ["Better Call Saul"]
+  },
+  {
+    "type": "image",
+    "src": "big_bang_theory.png",
+    "answers": ["The Big Bang Theory"]
+  },
+  {
+    "type": "image",
+    "src": "black_mirror.png",
+    "answers": ["Black Mirror"]
+  },
+  {
+    "type": "image",
+    "src": "bloques.png",
+    "answers": ["Bloqués"]
+  },
+  {
+    "type": "image",
+    "src": "breaking_bad.png",
+    "answers": ["Breaking Bad"]
+  },
+  {
+    "type": "image",
+    "src": "californication.png",
+    "answers": ["Californication"]
+  },
+  {
+    "type": "image",
+    "src": "casa_de_papel.png",
+    "answers": ["Casa de Papel"]
+  },
+  {
+    "type": "image",
+    "src": "chernobyl.png",
+    "answers": ["Chernobyl"]
+  },
+  {
+    "type": "image",
+    "src": "desperate_housewives.png",
+    "answers": ["Desperate Housewives"]
+  },
+  {
+    "type": "image",
+    "src": "dexter.png",
+    "answers": ["Dexter"]
+  },
+  {
+    "type": "image",
+    "src": "game_of_thrones.png",
+    "answers": ["Game of Thrones"]
+  },
+  {
+    "type": "image",
+    "src": "gotham.png",
+    "answers": ["Gotham"]
+  },
+  {
+    "type": "image",
+    "src": "how_i_met_your_mother.png",
+    "answers": ["How I Met Your Mother"]
+  },
+  {
+    "type": "image",
+    "src": "lucifer.png",
+    "answers": ["Lucifer"]
+  },
+  {
+    "type": "image",
+    "src": "luke_cage.png",
+    "answers": ["Luke Cage"]
+  },
+  {
+    "type": "image",
+    "src": "mindhunter.png",
+    "answers": ["Mindhunter"]
+  },
+  {
+    "type": "image",
+    "src": "narcos.png",
+    "answers": ["Narcos"]
+  },
+  {
+    "type": "image",
+    "src": "peaky_blinders.png",
+    "answers": ["Peaky Blinders"]
+  },
+  {
+    "type": "image",
+    "src": "prison_break.png",
+    "answers": ["Prison Break"]
+  },
+  {
+    "type": "image",
+    "src": "scrubs.png",
+    "answers": ["Scrubs"]
+  },
+  {
+    "type": "image",
+    "src": "sherlock.png",
+    "answers": ["Sherlock"]
+  },
+  {
+    "type": "image",
+    "src": "stranger_things.png",
+    "answers": ["Stranger Things"]
+  },
+  {
+    "type": "image",
+    "src": "suits.png",
+    "answers": ["Suits"]
+  },
+  {
+    "type": "image",
+    "src": "the_boys.png",
+    "answers": ["The Boys"]
+  },
+  {
+    "type": "image",
+    "src": "the_good_place.png",
+    "answers": ["The Good Place"]
+  },
+  {
+    "type": "image",
+    "src": "the_mandalorian.png",
+    "answers": ["The Mandalorian"]
+  },
+  {
+    "type": "image",
+    "src": "the_walking_dead.png",
+    "answers": ["The Walking Dead"]
+  },
+  {
+    "type": "image",
+    "src": "true_detective.png",
+    "answers": ["True Detective"]
+  },
+  {
+    "type": "image",
+    "src": "vikings.png",
+    "answers": ["Vikings"]
+  },
+  {
     "type": "emojis",
     "emojis": "👑 🐉 🏰",
     "answers": ["Game of Thrones", "GOT"]
