@@ -161,7 +161,7 @@ class Game {
    * @returns array
    */
   async loadJsonQuestions() {
-    return await fetch("/data/" + this.settings.themeQuestions + ".json").then(
+    return await fetch("./data/" + this.settings.themeQuestions + ".json").then(
       (response) => response.json()
     );
   }

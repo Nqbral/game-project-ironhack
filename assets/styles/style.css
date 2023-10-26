@@ -12,7 +12,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #3d3c40;
-  /* min-width: 100vw; */
   min-height: 100vh;
   color: #ffffff;
 }
@@ -24,7 +23,6 @@ ol {
 
 main {
   min-height: 100vh;
-  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,7 +229,7 @@ nav {
 }
 
 nav > a {
-  margin: auto 10px;
+  margin: auto 30px;
 }
 
 /* MENU */
