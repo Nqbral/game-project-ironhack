@@ -37,7 +37,7 @@ class QuestionMusic extends Question {
    * @returns string
    */
   getMusicSrc() {
-    return `/assets/sounds/${this.themeQuestion}/${this.musicSrc}`;
+    return `/game-project-ironhack/assets/sounds/${this.themeQuestion}/${this.musicSrc}`;
   }
 
   /**
