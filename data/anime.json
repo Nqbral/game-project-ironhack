@@ -2,12 +2,16 @@
   {
     "type": "image",
     "src": "aot.png",
-    "answers": ["L'Attaque des Titans", "Attack on Titans", "Shingeki no Kyojin"]
+    "answers": [
+      "L'Attaque des Titans",
+      "Attack on Titans",
+      "Shingeki no Kyojin"
+    ]
   },
   {
     "type": "image",
-    "src": "mha.png",
-    "answers": ["My Hero Academia"]
+    "src": "assassination_classroom.png",
+    "answers": ["Assassination Classroom"]
   },
   {
     "type": "image",
@@ -21,23 +25,18 @@
   },
   {
     "type": "image",
-    "src": "jujutsu_kaisen.png",
-    "answers": ["Jujutsu Kaisen"]
+    "src": "blue_exorcist.png",
+    "answers": ["Blue Exorcist"]
   },
   {
     "type": "image",
-    "src": "naruto.png",
-    "answers": ["Naruto"]
+    "src": "code_geass.png",
+    "answers": ["Code Geass"]
   },
   {
     "type": "image",
-    "src": "pokemon.png",
-    "answers": ["Pokemon"]
-  },
-  {
-    "type": "image",
-    "src": "one_piece.png",
-    "answers": ["One Piece"]
+    "src": "death_parade.png",
+    "answers": ["Death Parade"]
   },
   {
     "type": "image",
@@ -46,13 +45,122 @@
   },
   {
     "type": "image",
+    "src": "dr_stone.png",
+    "answers": ["Dr Stone", "Docteur stone"]
+  },
+  {
+    "type": "image",
+    "src": "dragon_ball.png",
+    "answers": ["Dragon Ball"]
+  },
+  {
+    "type": "image",
+    "src": "fire_force.png",
+    "answers": ["Fire Force"]
+  },
+  {
+    "type": "image",
+    "src": "fullmetal_alchemist.png",
+    "answers": ["Fullmetal Alchemist"]
+  },
+  {
+    "type": "image",
+    "src": "hxh.png",
+    "answers": ["Hunter X Hunter"]
+  },
+  {
+    "type": "image",
+    "src": "jujutsu_kaisen.png",
+    "answers": ["Jujutsu Kaisen"]
+  },
+  {
+    "type": "image",
     "src": "kuroko.png",
-    "answers": ["Kuroko no Basket"]
+    "answers": ["Kuroko No Basket"]
+  },
+  {
+    "type": "image",
+    "src": "made_in_abyss.png",
+    "answers": ["Made in Abyss"]
+  },
+  {
+    "type": "image",
+    "src": "mha.png",
+    "answers": ["My Hero Academia"]
+  },
+  {
+    "type": "image",
+    "src": "mob_psycho_100.png",
+    "answers": ["Mob Psycho 100"]
+  },
+  {
+    "type": "image",
+    "src": "naruto.png",
+    "answers": ["Naruto", "Naruto Shippûden"]
+  },
+  {
+    "type": "image",
+    "src": "no_game_no_life.png",
+    "answers": ["No Game No Life"]
+  },
+  {
+    "type": "image",
+    "src": "one_piece.png",
+    "answers": ["One Piece"]
+  },
+  {
+    "type": "image",
+    "src": "parasite.png",
+    "answers": ["Parasite"]
+  },
+  {
+    "type": "image",
+    "src": "pokemon.png",
+    "answers": ["Pokemon"]
+  },
+  {
+    "type": "image",
+    "src": "seven_deadly_sins.png",
+    "answers": ["Seven Deadly Sins", "Nanatzu No Taizai"]
+  },
+  {
+    "type": "image",
+    "src": "steins_gate.png",
+    "answers": ["Steins Gate", "Steins;Gate"]
+  },
+  {
+    "type": "image",
+    "src": "the_god_of_highscool.png",
+    "answers": ["The God of Highschool"]
+  },
+  {
+    "type": "image",
+    "src": "the_promised_neverland.png",
+    "answers": ["The Promised Neverland"]
+  },
+  {
+    "type": "image",
+    "src": "the_rising_of_the_shield_hero.png",
+    "answers": ["The Rising of the Shield Hero"]
+  },
+  {
+    "type": "image",
+    "src": "trigun.png",
+    "answers": ["Trigun"]
+  },
+  {
+    "type": "image",
+    "src": "vinland_saga.png",
+    "answers": ["Vinland Saga"]
   },
   {
     "type": "emojis",
     "emojis": "⚔️ ⚜️ ⛩ 🔰",
-    "answers": ["L'Attaque des Titans", "Attack on Titans", "Shingeki no Kyojin"]
+    "answers": [
+      "L'Attaque des Titans",
+      "Attack on Titans",
+      "Shingeki no Kyojin"
+    ]
   },
   {
     "type": "emojis",
@@ -201,12 +309,160 @@
   },
   {
     "type": "music",
+    "src": "another_op_1.mp3",
+    "answers": ["Another"]
+  },
+  {
+    "type": "music",
+    "src": "aot_op_1.mp3",
+    "answers": [
+      "L'Attaque des Titans",
+      "Attack on Titans",
+      "Shingeki no Kyojin"
+    ]
+  },
+  {
+    "type": "music",
+    "src": "aot_op_2.mp3",
+    "answers": [
+      "L'Attaque des Titans",
+      "Attack on Titans",
+      "Shingeki no Kyojin"
+    ]
+  },
+  {
+    "type": "music",
+    "src": "assassination_classroom_op_1.mp3",
+    "answers": ["Assassination Classroom"]
+  },
+  {
+    "type": "music",
+    "src": "black_clover_op_1.mp3",
+    "answers": ["Black Clover"]
+  },
+  {
+    "type": "music",
     "src": "bleach_op_1.mp3",
     "answers": ["Bleach"]
   },
   {
     "type": "music",
-    "src": "parasyte_op_1.mp3",
-    "answers": ["Parasyte"]
+    "src": "blue_exorcist_op_1.mp3",
+    "answers": ["Blue Exorcist"]
+  },
+  {
+    "type": "music",
+    "src": "blue_lock_op_1.mp3",
+    "answers": ["Blue Lock"]
+  },
+  {
+    "type": "music",
+    "src": "btoom_op_1.mp3",
+    "answers": ["Btoom"]
+  },
+  {
+    "type": "music",
+    "src": "code_geass_op_1.mp3",
+    "answers": ["Code Geass"]
+  },
+  {
+    "type": "music",
+    "src": "cowboy_bebop_op_1.mp3",
+    "answers": ["Cowboy Bebop"]
+  },
+  {
+    "type": "music",
+    "src": "death_note_op_1.mp3",
+    "answers": ["Death Note"]
+  },
+  {
+    "type": "music",
+    "src": "death_parade_op_1.mp3",
+    "answers": ["Death Parade"]
+  },
+  {
+    "type": "music",
+    "src": "elfen_lied_op_1.mp3",
+    "answers": ["Elfen Lied"]
+  },
+  {
+    "type": "music",
+    "src": "fire_force_op_1.mp3",
+    "answers": ["Fire Force"]
+  },
+  {
+    "type": "music",
+    "src": "hxh_op_1.mp3",
+    "answers": ["Hunter X Hunter"]
+  },
+  {
+    "type": "music",
+    "src": "jojos_op_1.mp3",
+    "answers": ["Jojo's Bizarre Adventure"]
+  },
+  {
+    "type": "music",
+    "src": "jujutsu_kaisen_op_1.mp3",
+    "answers": ["Jujutsu Kaisen"]
+  },
+  {
+    "type": "music",
+    "src": "love_is_war_op_1.mp3",
+    "answers": ["Love is War"]
+  },
+  {
+    "type": "music",
+    "src": "mob_psycho_100_op_1.mp3",
+    "answers": ["Mob Psycho 100"]
+  },
+  {
+    "type": "music",
+    "src": "my_hero_academia_op_1.mp3",
+    "answers": ["My Hero Academia"]
+  },
+  {
+    "type": "music",
+    "src": "naruto_shippuden_op_1.mp3",
+    "answers": ["Naruto Shippûden"]
+  },
+  {
+    "type": "music",
+    "src": "one_piece_op_1.mp3",
+    "answers": ["One Piece"]
+  },
+  {
+    "type": "music",
+    "src": "one_punch_man_op_1.mp3",
+    "answers": ["One Punch Man"]
+  },
+  {
+    "type": "music",
+    "src": "parasite_op_1.mp3",
+    "answers": ["Parasite"]
+  },
+  {
+    "type": "music",
+    "src": "promised_neverland_op_1.mp3",
+    "answers": ["The Promised Neverland"]
+  },
+  {
+    "type": "music",
+    "src": "spy_x_family_op_1.mp3",
+    "answers": ["Spy X Family"]
+  },
+  {
+    "type": "music",
+    "src": "steins_gate_op_1.mp3",
+    "answers": ["Steins Gate", "Steins;Gate"]
+  },
+  {
+    "type": "music",
+    "src": "terraformars_op_1.mp3",
+    "answers": ["Terraformars"]
+  },
+  {
+    "type": "music",
+    "src": "vinland_saga_op_1.mp3",
+    "answers": ["Vinland Saga"]
   }
 ]

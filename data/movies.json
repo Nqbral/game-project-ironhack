@@ -1,5 +1,155 @@
 [
   {
+    "type": "image",
+    "src": "300.png",
+    "answers": ["300"]
+  },
+  {
+    "type": "image",
+    "src": "american_psycho.png",
+    "answers": ["American Psycho"]
+  },
+  {
+    "type": "image",
+    "src": "apocalypse_now.png",
+    "answers": ["Apocalypse Now"]
+  },
+  {
+    "type": "image",
+    "src": "django.png",
+    "answers": ["Django", "Django Unchained"]
+  },
+  {
+    "type": "image",
+    "src": "fight_club.png",
+    "answers": ["Fight Club"]
+  },
+  {
+    "type": "image",
+    "src": "full_metal_jacket.png",
+    "answers": ["Full Metal Jacket"]
+  },
+  {
+    "type": "image",
+    "src": "il_faut_sauver_le_soldat_ryan.png",
+    "answers": ["Il faut sauver le soldat Ryan"]
+  },
+  {
+    "type": "image",
+    "src": "inception.png",
+    "answers": ["Inception"]
+  },
+  {
+    "type": "image",
+    "src": "inglorious_basterds.png",
+    "answers": ["Inglorious Basterds"]
+  },
+  {
+    "type": "image",
+    "src": "it.png",
+    "answers": ["It", "Ça"]
+  },
+  {
+    "type": "image",
+    "src": "john_wick.png",
+    "answers": ["John Wick"]
+  },
+  {
+    "type": "image",
+    "src": "jumanji.png",
+    "answers": ["Jumanji"]
+  },
+  {
+    "type": "image",
+    "src": "jurassic_park.png",
+    "answers": ["Jurassic Park"]
+  },
+  {
+    "type": "image",
+    "src": "la_defense_lincoln.png",
+    "answers": ["La Défense Lincoln"]
+  },
+  {
+    "type": "image",
+    "src": "la_guerre_des_mondes.png",
+    "answers": ["La Guerre des Mondes"]
+  },
+  {
+    "type": "image",
+    "src": "la_ligne_verte.png",
+    "answers": ["La Ligne Verte"]
+  },
+  {
+    "type": "image",
+    "src": "la_liste_de_schindler.png",
+    "answers": ["La Liste de Schindler"]
+  },
+  {
+    "type": "image",
+    "src": "le_loup_de_wallstreet.png",
+    "answers": ["Le Loup de Wallstreet"]
+  },
+  {
+    "type": "image",
+    "src": "le_terminal.png",
+    "answers": ["Le Terminal"]
+  },
+  {
+    "type": "image",
+    "src": "les_evades.png",
+    "answers": ["Les Évadés"]
+  },
+  {
+    "type": "image",
+    "src": "lotr.png",
+    "answers": ["Le Seigneur des Anneaux"]
+  },
+  {
+    "type": "image",
+    "src": "mad_max.png",
+    "answers": ["Mad Max", "Mad Max : Fury Road"]
+  },
+  {
+    "type": "image",
+    "src": "matrix.png",
+    "answers": ["Matrix"]
+  },
+  {
+    "type": "image",
+    "src": "phone_game.png",
+    "answers": ["Phone Game"]
+  },
+  {
+    "type": "image",
+    "src": "pulp_fiction.png",
+    "answers": ["Pulp Fiction"]
+  },
+  {
+    "type": "image",
+    "src": "retour_vers_le_futur.png",
+    "answers": ["Retour vers le futur"]
+  },
+  {
+    "type": "image",
+    "src": "shining.png",
+    "answers": ["Shining"]
+  },
+  {
+    "type": "image",
+    "src": "truman_show.png",
+    "answers": ["The Truman Show"]
+  },
+  {
+    "type": "image",
+    "src": "tu_ne_tueras_point.png",
+    "answers": ["Tu ne tueras point"]
+  },
+  {
+    "type": "image",
+    "src": "wall_e.png",
+    "answers": ["WALL-E"]
+  },
+  {
     "type": "emojis",
     "emojis": "🍔 🍟 🕶️ 🔫",
     "answers": ["Pulp Fiction"]
@@ -22,7 +172,7 @@
   {
     "type": "emojis",
     "emojis": "🌋 🧙‍♂️ 💍 👑",
-    "answers": ["Le seigneur des anneaux"]
+    "answers": ["Le Seigneur des Anneaux"]
   },
   {
     "type": "emojis",
@@ -32,7 +182,7 @@
   {
     "type": "emojis",
     "emojis": "🍊 ⏰ 🔪 🎶",
-    "answers": ["Orange mécanique"]
+    "answers": ["Orange Mécanique"]
   },
   {
     "type": "emojis",
@@ -148,5 +298,155 @@
     "type": "emojis",
     "emojis": "🚍 💥 🕰️ 🚧",
     "answers": ["Speed"]
+  },
+  {
+    "type": "music",
+    "src": "300.mp3",
+    "answers": ["300"]
+  },
+  {
+    "type": "music",
+    "src": "avatar.mp3",
+    "answers": ["Avatar"]
+  },
+  {
+    "type": "music",
+    "src": "baby_driver.mp3",
+    "answers": ["Baby Driver"]
+  },
+  {
+    "type": "music",
+    "src": "barbie.mp3",
+    "answers": ["Barbie"]
+  },
+  {
+    "type": "music",
+    "src": "battle_royale.mp3",
+    "answers": ["Battle Royale"]
+  },
+  {
+    "type": "music",
+    "src": "brice_de_nice.mp3",
+    "answers": ["Brice de Nice"]
+  },
+  {
+    "type": "music",
+    "src": "dents_de_la_mer.mp3",
+    "answers": ["Les Dents de la mer"]
+  },
+  {
+    "type": "music",
+    "src": "django_unchained.mp3",
+    "answers": ["Django", "Django Unchained"]
+  },
+  {
+    "type": "music",
+    "src": "drive.mp3",
+    "answers": ["Drive"]
+  },
+  {
+    "type": "music",
+    "src": "gladiator.mp3",
+    "answers": ["Gladiator"]
+  },
+  {
+    "type": "music",
+    "src": "harry_potter.mp3",
+    "answers": ["Harry Potter"]
+  },
+  {
+    "type": "music",
+    "src": "indiana_jones.mp3",
+    "answers": ["Indiana Jones"]
+  },
+  {
+    "type": "music",
+    "src": "interstellar.mp3",
+    "answers": ["Interstellar"]
+  },
+  {
+    "type": "music",
+    "src": "intouchables.mp3",
+    "answers": ["Intouchables"]
+  },
+  {
+    "type": "music",
+    "src": "jurassic_park.mp3",
+    "answers": ["Jurassic Park"]
+  },
+  {
+    "type": "music",
+    "src": "kill_bill.mp3",
+    "answers": ["Kill Bill"]
+  },
+  {
+    "type": "music",
+    "src": "la_boum.mp3",
+    "answers": ["La Boum"]
+  },
+  {
+    "type": "music",
+    "src": "la_haut.mp3",
+    "answers": ["Là Haut"]
+  },
+  {
+    "type": "music",
+    "src": "les_choristes.mp3",
+    "answers": ["Les Choristes"]
+  },
+  {
+    "type": "music",
+    "src": "lotr.mp3",
+    "answers": ["Le Seigneur des Anneaux"]
+  },
+  {
+    "type": "music",
+    "src": "matrix.mp3",
+    "answers": ["Matrix"]
+  },
+  {
+    "type": "music",
+    "src": "mission_impossible.mp3",
+    "answers": ["Mission Impossible"]
+  },
+  {
+    "type": "music",
+    "src": "pirates_of_the_carribean.mp3",
+    "answers": ["Pirates des Caraïbes"]
+  },
+  {
+    "type": "music",
+    "src": "pulp_fiction.mp3",
+    "answers": ["Pulp Fiction"]
+  },
+  {
+    "type": "music",
+    "src": "rocky.mp3",
+    "answers": ["Rocky"]
+  },
+  {
+    "type": "music",
+    "src": "saw.mp3",
+    "answers": ["Saw"]
+  },
+  {
+    "type": "music",
+    "src": "shrek.mp3",
+    "answers": ["Shrek"]
+  },
+  {
+    "type": "music",
+    "src": "snatch.mp3",
+    "answers": ["Snatch"]
+  },
+  {
+    "type": "music",
+    "src": "the_avengers.mp3",
+    "answers": ["The Avengers"]
+  },
+  {
+    "type": "music",
+    "src": "transformers.mp3",
+    "answers": ["Transformers"]
   }
 ]

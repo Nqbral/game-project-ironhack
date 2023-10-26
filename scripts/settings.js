@@ -95,16 +95,12 @@ class Settings {
    * Reset theme settings
    */
   resetThemeSettings() {
-    this.themeQuestions = "anime";
+    this.themeQuestions = "";
     let childrenThemeList = this.themeList.children;
 
     for (let i = 0; i < childrenThemeList.length; i++) {
       let child = childrenThemeList[i];
       child.classList.remove("selected");
-
-      if (child.getAttribute("value") === this.themeQuestions) {
-        child.classList.add("selected");
-      }
     }
   }
 

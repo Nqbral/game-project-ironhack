@@ -44,7 +44,7 @@ class QuestionImage extends Question {
     switch (this.themeQuestion) {
       case "anime":
         return "De quel anime provient cette image ?";
-      case "movie":
+      case "movies":
         return "De quel film provient cette image ?";
       default:
         return "De quelle série provient cette image ?";
