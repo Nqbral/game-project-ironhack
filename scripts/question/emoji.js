@@ -35,7 +35,7 @@ class QuestionEmoji extends Question {
     switch (this.themeQuestion) {
       case "anime":
         return "Cette suite d'emojis vous font penser à quel anime ?";
-      case "movie":
+      case "movies":
         return "Cette suite d'emojis vous font penser à quel film ?";
       default:
         return "Cette suite d'emojis vous font penser à quelle série ?";

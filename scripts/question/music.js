@@ -49,7 +49,7 @@ class QuestionMusic extends Question {
     switch (this.themeQuestion) {
       case "anime":
         return "De quel anime provient cette musique ?";
-      case "movie":
+      case "movies":
         return "De quel film provient cette musique ?";
       default:
         return "De quelle série provient cette musique ?";
