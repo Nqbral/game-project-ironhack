@@ -1,0 +1,452 @@
+[
+  {
+    "type": "image",
+    "src": "arcane.png",
+    "answers": ["Arcane"]
+  },
+  {
+    "type": "image",
+    "src": "better_call_saul.png",
+    "answers": ["Better Call Saul"]
+  },
+  {
+    "type": "image",
+    "src": "big_bang_theory.png",
+    "answers": ["The Big Bang Theory"]
+  },
+  {
+    "type": "image",
+    "src": "black_mirror.png",
+    "answers": ["Black Mirror"]
+  },
+  {
+    "type": "image",
+    "src": "bloques.png",
+    "answers": ["Bloqués"]
+  },
+  {
+    "type": "image",
+    "src": "breaking_bad.png",
+    "answers": ["Breaking Bad"]
+  },
+  {
+    "type": "image",
+    "src": "californication.png",
+    "answers": ["Californication"]
+  },
+  {
+    "type": "image",
+    "src": "casa_de_papel.png",
+    "answers": ["La casa de Papel"]
+  },
+  {
+    "type": "image",
+    "src": "chernobyl.png",
+    "answers": ["Chernobyl"]
+  },
+  {
+    "type": "image",
+    "src": "desperate_housewives.png",
+    "answers": ["Desperate Housewives"]
+  },
+  {
+    "type": "image",
+    "src": "dexter.png",
+    "answers": ["Dexter"]
+  },
+  {
+    "type": "image",
+    "src": "game_of_thrones.png",
+    "answers": ["Game of Thrones"]
+  },
+  {
+    "type": "image",
+    "src": "gotham.png",
+    "answers": ["Gotham"]
+  },
+  {
+    "type": "image",
+    "src": "how_i_met_your_mother.png",
+    "answers": ["How I Met Your Mother"]
+  },
+  {
+    "type": "image",
+    "src": "lucifer.png",
+    "answers": ["Lucifer"]
+  },
+  {
+    "type": "image",
+    "src": "luke_cage.png",
+    "answers": ["Luke Cage"]
+  },
+  {
+    "type": "image",
+    "src": "mindhunter.png",
+    "answers": ["Mindhunter"]
+  },
+  {
+    "type": "image",
+    "src": "narcos.png",
+    "answers": ["Narcos"]
+  },
+  {
+    "type": "image",
+    "src": "peaky_blinders.png",
+    "answers": ["Peaky Blinders"]
+  },
+  {
+    "type": "image",
+    "src": "prison_break.png",
+    "answers": ["Prison Break"]
+  },
+  {
+    "type": "image",
+    "src": "scrubs.png",
+    "answers": ["Scrubs"]
+  },
+  {
+    "type": "image",
+    "src": "sherlock.png",
+    "answers": ["Sherlock"]
+  },
+  {
+    "type": "image",
+    "src": "stranger_things.png",
+    "answers": ["Stranger Things"]
+  },
+  {
+    "type": "image",
+    "src": "suits.png",
+    "answers": ["Suits"]
+  },
+  {
+    "type": "image",
+    "src": "the_boys.png",
+    "answers": ["The Boys"]
+  },
+  {
+    "type": "image",
+    "src": "the_good_place.png",
+    "answers": ["The Good Place"]
+  },
+  {
+    "type": "image",
+    "src": "the_mandalorian.png",
+    "answers": ["The Mandalorian"]
+  },
+  {
+    "type": "image",
+    "src": "the_walking_dead.png",
+    "answers": ["The Walking Dead"]
+  },
+  {
+    "type": "image",
+    "src": "true_detective.png",
+    "answers": ["True Detective"]
+  },
+  {
+    "type": "image",
+    "src": "vikings.png",
+    "answers": ["Vikings"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "👑 🐉 🏰",
+    "answers": ["Game of Thrones", "GOT"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🧟‍♂️ 🧟‍♀️ 💀 👮‍♂️",
+    "answers": ["The Walking Dead"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏹 🌿",
+    "answers": ["Arrow"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🦸 💥 🩸",
+    "answers": ["The Boys"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "👸🏼 ♟️ 👑",
+    "answers": ["Le Jeu de la Dame", "The Queen's Gambit"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏫 📚 🍆",
+    "answers": ["Sex Education"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🐰 🃏 🔥 🏙️",
+    "answers": ["Alice in Borderland"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🍻 ⚽ 🧔 🍏",
+    "answers": ["Ted Lasso"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🖖 🌌 🚀 👽",
+    "answers": ["Star Trek"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🔬 🚐 💰",
+    "answers": ["Breaking Bad"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🔍 🕵️ 🖋️ 🎻",
+    "answers": ["Sherlock"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏝️ ✈️ 📻 ❓",
+    "answers": ["Lost", "Lost : les disparus"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏠 🍩 👪",
+    "answers": ["Les Simpson", "The Simpsons"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏥 👨‍⚕️ 👩‍⚕️ 😂",
+    "answers": ["Scrubs"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏢 🕴️ 🚬 📈",
+    "answers": ["Mad Men"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🚲 👽 🧠 🚪",
+    "answers": ["Stranger Things"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🇺🇸 🏛️ 🃏 🤯",
+    "answers": ["House of Cards"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "💻 🤖 🕵️‍♂ 🔓",
+    "answers": ["Mr Robot"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "⚒️ 🛡️ 🌊 🛶",
+    "answers": ["Vikings"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🧛‍♂️ 🔪 👱‍♀️",
+    "answers": ["Buffy contre les vampires", "Buffy, the vampire slayer"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏍️ 💀 🔪",
+    "answers": ["Sons of Anarchy"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🍊 👭 🚓 👮‍♀️",
+    "answers": ["Orange is the New Black"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "☢️ 💥 🚨",
+    "answers": ["Chernobyl"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🏢 🔒 🏃 💼",
+    "answers": ["Prison Break"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "💰 💊 🇨🇴",
+    "answers": ["Narcos"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "⚔️ 🛡️ 🏟️ 🏛️",
+    "answers": ["Spartacus"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🕶️ 🕵️‍♂️ 🌍 🔐 🇫🇷",
+    "answers": ["Le Bureau des Légendes"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🔪 🔬 🌆 💉",
+    "answers": ["Dexter"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "🌍 🧟‍♂️ 🔫 👧🏻",
+    "answers": ["The Last of Us"]
+  },
+  {
+    "type": "emojis",
+    "emojis": "👮‍♂️ 👮‍♀️ 🚓 🤣",
+    "answers": ["Brooklyn 99", "Brooklyn Nine-Nine"]
+  },
+  {
+    "type": "music",
+    "src": "big_bang_theory.mp3",
+    "answers": ["The Big Bang Theory"]
+  },
+  {
+    "type": "music",
+    "src": "breaking_bad.mp3",
+    "answers": ["Breaking Bad"]
+  },
+  {
+    "type": "music",
+    "src": "brooklyn_nine_nine.mp3",
+    "answers": ["Brooklyn 99", "Brooklyn Nine-Nine"]
+  },
+  {
+    "type": "music",
+    "src": "californication.mp3",
+    "answers": ["Californication"]
+  },
+  {
+    "type": "music",
+    "src": "community.mp3",
+    "answers": ["Community"]
+  },
+  {
+    "type": "music",
+    "src": "dark.mp3",
+    "answers": ["Dark"]
+  },
+  {
+    "type": "music",
+    "src": "desperate_housewives.mp3",
+    "answers": ["Desperate Housewives"]
+  },
+  {
+    "type": "music",
+    "src": "dexter.mp3",
+    "answers": ["Dexter"]
+  },
+  {
+    "type": "music",
+    "src": "friends.mp3",
+    "answers": ["Friends"]
+  },
+  {
+    "type": "music",
+    "src": "futurama.mp3",
+    "answers": ["Futurama"]
+  },
+  {
+    "type": "music",
+    "src": "game_of_thrones.mp3",
+    "answers": ["Game of Thrones"]
+  },
+  {
+    "type": "music",
+    "src": "house_of_cards.mp3",
+    "answers": ["House of Cards"]
+  },
+  {
+    "type": "music",
+    "src": "la_casa_de_papel.mp3",
+    "answers": ["La casa de Papel"]
+  },
+  {
+    "type": "music",
+    "src": "mad_men.mp3",
+    "answers": ["Mad Men"]
+  },
+  {
+    "type": "music",
+    "src": "malcolm.mp3",
+    "answers": ["Malcolm", "Malcolm in the middle"]
+  },
+  {
+    "type": "music",
+    "src": "misfits.mp3",
+    "answers": ["Misfits"]
+  },
+  {
+    "type": "music",
+    "src": "narcos.mp3",
+    "answers": ["Narcos"]
+  },
+  {
+    "type": "music",
+    "src": "peaky_blinders.mp3",
+    "answers": ["Peaky Blinders"]
+  },
+  {
+    "type": "music",
+    "src": "prison_break.mp3",
+    "answers": ["Prison Break"]
+  },
+  {
+    "type": "music",
+    "src": "sherlock.mp3",
+    "answers": ["Sherlock"]
+  },
+  {
+    "type": "music",
+    "src": "skins.mp3",
+    "answers": ["Skins"]
+  },
+  {
+    "type": "music",
+    "src": "sons_of_anarchy.mp3",
+    "answers": ["Sons of Anarchy"]
+  },
+  {
+    "type": "music",
+    "src": "stargate_sg1.mp3",
+    "answers": ["Stargate SG-1"]
+  },
+  {
+    "type": "music",
+    "src": "stranger_things.mp3",
+    "answers": ["Stranger Things"]
+  },
+  {
+    "type": "music",
+    "src": "the_last_of_us.mp3",
+    "answers": ["The Last of Us"]
+  },
+  {
+    "type": "music",
+    "src": "the_office.mp3",
+    "answers": ["The Office"]
+  },
+  {
+    "type": "music",
+    "src": "the_sopranos.mp3",
+    "answers": ["Les Soprano", "The Sopranos"]
+  },
+  {
+    "type": "music",
+    "src": "the_walking_dead.mp3",
+    "answers": ["The Walking Dead"]
+  },
+  {
+    "type": "music",
+    "src": "vikings.mp3",
+    "answers": ["Vikings"]
+  },
+  {
+    "type": "music",
+    "src": "westworld.mp3",
+    "answers": ["Westworld"]
+  }
+]

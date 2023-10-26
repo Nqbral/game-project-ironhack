@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Popcorn quizz game</title>
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header / navbar -->
+    <header>
+      <nav id="navbar">
+        <a href="./index.html"
+          ><img src="./assets/images/logo.png" alt="spotify-logo" id="logo-nav"
+        /></a>
+        <a href="./index.html"
+          ><span class="accent-color">Popcorn</span
+          ><span class="primary-color"> quizz</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <!-- Menu -->
+      <section id="game-menu">
+        <div id="header-menu">
+          <img id="logo-menu" src="./assets/images/logo.png" alt="logo-menu" />
+          <h1><span class="accent-color">Popcorn</span> quizz</h1>
+        </div>
+        <div class="card">
+          <h2>Menu</h2>
+          <button class="button primary-button" id="start-menu">
+            DÉMARRER
+          </button>
+          <button class="button primary-button" id="leaderboard-menu">
+            CLASSEMENT
+          </button>
+          <button class="button primary-button" id="rules-menu">RÈGLES</button>
+          <button class="button primary-button" id="about-menu">
+            À PROPOS
+          </button>
+        </div>
+      </section>
+
+      <!-- Leaderboard -->
+      <section id="leaderboard">
+        <div class="card">
+          <h2>Classement</h2>
+          <div id="leaderboard-scores"></div>
+          <button class="button primary-button" id="leaderboard-back-to-menu">
+            RETOUR AU MENU
+          </button>
+        </div>
+      </section>
+
+      <!-- Rules -->
+      <section id="rules">
+        <div class="card">
+          <h2>Règles</h2>
+          <h3>Principe du jeu</h3>
+          <p>
+            Popcorn quizz est un jeu permettant de tester votre culture sur
+            différents thème de la <b>pop-culture</b> comme les animes, séries
+            et film.
+          </p>
+          <p>
+            Lors de la préparation de votre quizz, vous allez devoir choisir un
+            thème ainsi que le type de questions que vous souhaitez :
+          </p>
+          <ul>
+            <li><a href="#image-rules">Image</a></li>
+            <li><a href="#emoji-rules">Emojis</a></li>
+            <li><a href="#music-rules">Musique</a></li>
+          </ul>
+          <h3 id="image-rules">Question image</h3>
+          <p>
+            Le but de cette question est de deviner de quel anime, série ou film
+            est tirée cette image.
+          </p>
+          <h3 id="emoji-rules">Question emojis</h3>
+          <p>
+            Sur cette question, une série d'emojis apparaîtra et vous devriez
+            deviner quel anime, série ou film cette série d'emojis vous fait
+            penser.
+          </p>
+          <h3 id="music-rules">Question musique</h3>
+          <p>Une question de blind test, rien de plus classique.</p>
+          <h3>Donner sa réponse</h3>
+          <p>
+            Dans le formulaire du quizz, un champ de saisi vous permets de
+            saisir votre réponse. Le quizz a une liste de réponses pour chaque
+            question et votre réponse devra bien orthographier le nom de
+            l'oeuvre pour valider la réponse (<i
+              >Les accents ne sont pas obligatoires</i
+            >).
+          </p>
+          <p><b>Un point par bonne réponse !</b></p>
+          <button class="button primary-button" id="rules-back-to-menu">
+            RETOUR AU MENU
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="card">
+          <h2>À propos</h2>
+          <h3>Qu'est-ce que Popcorn quizz ?</h3>
+          <p>
+            Popcorn quizz est un jeu permettant de tester votre culture sur
+            différents thème de la <b>pop-culture</b> comme les animes, séries
+            et film.
+          </p>
+          <p>
+            On y retrouvera de multiples questions comme des questions de
+            <b>blind test</b>, <b>emojis</b> ou encore sur des <b>images</b>.
+          </p>
+          <h3>Pourquoi Popcorn quizz a été créé ?</h3>
+          <p>
+            Le jeu Popcorn quizz a vu le jour dans le cadre de la formation
+            <a href="https://www.ironhack.com/fr" target="_blank">Ironhack</a>
+            où on devait réaliser un jeu en <b>HTML/CSS/JS</b> en 2 semaines.
+            Vous pouvez retrouver ce projet sur mon
+            <a
+              href="https://github.com/Nqbral/game-project-ironhack"
+              target="_blank"
+              >GitHub</a
+            >.
+          </p>
+          <h3>D'où est venue l'idée ?</h3>
+          <p>
+            L'idée initiale vient du fait qu'avec ma copine, on adore faire des
+            blind test. On s'est d'ailleurs rencontré de cette façon
+          </p>
+          <p>
+            <i
+              >La légende raconte que je l'ai battu à plate couture mais
+              chuuuuut...</i
+            >
+            🤫🤫🤫
+          </p>
+          <p>
+            J'ai donc saisi l'occasion pour créer ce jeu et peut-être encore la
+            battre ?
+          </p>
+          <button class="button primary-button" id="about-back-to-menu">
+            RETOUR AU MENU
+          </button>
+        </div>
+      </section>
+
+      <!-- Quizz preparation -->
+      <section id="quizz-preparation">
+        <div class="card">
+          <h2>Préparation du quizz</h2>
+          <div class="list-prepation">
+            <h3>Thème du quizz</h3>
+            <ul class="list-selector" id="theme-selector">
+              <li id="theme-anime" value="anime">Anime</li>
+              <li id="theme-movies" value="movies">Films</li>
+              <li id="theme-series" value="series">Séries</li>
+            </ul>
+          </div>
+          <div class="list-prepation">
+            <h3>Type de questions du quizz</h3>
+            <ul class="list-selector" id="question-types-selector">
+              <li id="question-type-image" value="image">Image</li>
+              <li id="question-type-emojis" value="emojis">Emojis</li>
+              <li id="question-type-music" value="music">Musique</li>
+            </ul>
+          </div>
+          <div id="player-name">
+            <h3>Nom du joueur</h3>
+            <input id="player-name-input" type="text" name="player-name" />
+          </div>
+          <div id="buttons-list-quizz-prep">
+            <button
+              class="button outlined-button"
+              id="quizz-preparation-back-to-menu"
+            >
+              RETOUR AU MENU
+            </button>
+            <button
+              class="button primary-button"
+              id="quizz-preparation-start-quizz"
+            >
+              LANCER LE QUIZZ
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quizz game -->
+      <section id="quizz-game">
+        <!-- Content -->
+        <div class="card">
+          <h2 id="quizz-name"></h2>
+          <div id="content-question">
+            <!-- Image Section -->
+            <div id="image-question">
+              <img id="image-question-content" />
+            </div>
+
+            <!-- Emojis Section -->
+            <div id="emojis-question">
+              <p id="emojis-question-content"></p>
+            </div>
+
+            <!-- Music Section -->
+            <div id="music-question">
+              <div id="player-music">
+                <img
+                  src="./assets/images/white_soundwave.png"
+                  alt="white_soundwave"
+                />
+                <audio id="audio-track"></audio>
+                <div id="playpause-track">
+                  <i class="fa fa-play-circle"></i>
+                </div>
+                <div class="slider-container">
+                  <div id="current-time">00:00</div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    id="seek-slider"
+                    value="0"
+                  />
+                  <div id="total-duration">00:00</div>
+                </div>
+                <div class="slider-container">
+                  <i class="fa fa-volume-down"></i>
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    id="volume-slider"
+                    value="50"
+                  />
+                  <i class="fa fa-volume-up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="question-card" class="card">
+          <div id="question"></div>
+          <input
+            type="text"
+            id="answer"
+            name="answer"
+            placeholder="Ma réponse"
+          />
+          <div id="buttons-quizz">
+            <button class="button outlined-button" id="button-quizz-pass">
+              PASSER LA QUESTION
+            </button>
+            <button class="button primary-button" id="button-quizz-validate">
+              VALIDER LA RÉPONSE
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- End quizz -->
+      <section id="quizz-end">
+        <div class="card">
+          <h2>Fin du quizz !</h2>
+          <div id="score-quizz-game">
+            <h3>Votre score</h3>
+            <p id="paragraph-score"></p>
+          </div>
+          <div id="answers-quizz">
+            <ul id="list-answers"></ul>
+          </div>
+          <div id="buttons-end-quizz">
+            <button class="button primary-button" id="quizz-end-restart">
+              REFAIRE UN QUIZZ
+            </button>
+            <button
+              class="button outlined-button"
+              id="quizz-end-show-leaderboard"
+            >
+              VOIR LE CLASSEMENT
+            </button>
+            <button class="button accent-button" id="quizz-end-back-to-menu">
+              RETOUR AU MENU
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal error -->
+      <div id="modal-error" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p>
+              <span id="title-modal" class="accent-color">Title modal</span>
+            </p>
+            <span id="close-modal" class="close">&times;</span>
+          </div>
+          <div id="modal-message-errors">
+            <p id="modal-message"></p>
+            <ul id="list-errors-modal"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scripts -->
+      <script type="text/javascript" src="scripts/music_player.js"></script>
+      <script
+        type="text/javascript"
+        src="scripts/music_player/music_player_quizz.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="scripts/music_player/music_player_answer.js"
+      ></script>
+      <script type="text/javascript" src="scripts/player.js"></script>
+      <script type="text/javascript" src="scripts/score.js"></script>
+      <script type="text/javascript" src="scripts/leaderboard.js"></script>
+      <script type="text/javascript" src="scripts/question.js"></script>
+      <script type="text/javascript" src="scripts/question/image.js"></script>
+      <script type="text/javascript" src="scripts/question/emoji.js"></script>
+      <script type="text/javascript" src="scripts/question/music.js"></script>
+      <script type="text/javascript" src="scripts/answer.js"></script>
+      <script type="text/javascript" src="scripts/answer/image.js"></script>
+      <script type="text/javascript" src="scripts/answer/emoji.js"></script>
+      <script type="text/javascript" src="scripts/answer/music.js"></script>
+      <script type="text/javascript" src="scripts/settings.js"></script>
+      <script type="text/javascript" src="scripts/modal_error.js"></script>
+      <script type="text/javascript" src="scripts/game.js"></script>
+      <script type="text/javascript" src="scripts/navigator.js"></script>
+      <script type="text/javascript" src="scripts/script.js"></script>
+    </main>
+  </body>
+</html>
