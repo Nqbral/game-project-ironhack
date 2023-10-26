@@ -172,7 +172,7 @@ class Game {
   async initQuestions() {
     let jsonQuestions = await this.loadJsonQuestions();
 
-    this.questions = this.filterQuestions(jsonQuestions).slice(0, 30);
+    this.questions = this.filterQuestions(jsonQuestions).slice(0, 10);
   }
 
   /**
