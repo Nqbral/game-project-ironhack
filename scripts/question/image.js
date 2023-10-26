@@ -32,7 +32,7 @@ class QuestionImage extends Question {
    * @returns string
    */
   getImageSrc() {
-    return `../../assets/images/${this.themeQuestion}/${this.imgSrc}`;
+    return `/assets/images/${this.themeQuestion}/${this.imgSrc}`;
   }
 
   /**
