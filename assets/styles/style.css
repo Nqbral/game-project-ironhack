@@ -276,23 +276,39 @@ nav > a {
   align-items: center;
 }
 
+#game-menu .card {
+  width: 70vw;
+}
+
 #game-menu .button {
   min-width: 60vw;
 }
 
 @media (width > 768px) {
+  #game-menu .card {
+    width: 50vw;
+  }
+
   #game-menu .button {
     min-width: 40vw;
   }
 }
 
 @media (width > 1024px) {
+  #game-menu .card {
+    width: 40vw;
+  }
+
   #game-menu .button {
     min-width: 30vw;
   }
 }
 
 @media (width > 1440px) {
+  #game-menu .card {
+    width: 25vw;
+  }
+
   #game-menu .button {
     min-width: 15vw;
   }
