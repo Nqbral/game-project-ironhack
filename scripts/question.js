@@ -33,7 +33,7 @@ class Question {
     );
 
     return formattedAnswers.includes(
-      this.removeAccent(answerUser).toLowerCase()
+      this.removeAccent(answerUser.trim()).toLowerCase()
     );
   }
 
